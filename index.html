@@ -1,0 +1,2474 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth dark font-vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tran Viet Anh | Strategic Researcher & Consulting Director Portfolio</title>
+  <meta name="description" content="Personal Portfolio of Tran Viet Anh - Strategic Consulting Director, Disruptive Researcher & Value Orchestrator. Comprehensive Enterprise Transformations, Market Screening Reports, Vietnam Home Report 2022, Vinasoy Mega Projects & AI Lean Partner FMCG Business Model.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Be Vietnam Pro, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#0f172a',
+            },
+            vinasoy: {
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            },
+            vhr: {
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html.font-vi body {
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      letter-spacing: -0.012em;
+      line-height: 1.6;
+    }
+    html.font-vi .font-heading {
+      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', sans-serif;
+      letter-spacing: -0.022em;
+    }
+    html.font-en body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      letter-spacing: -0.005em;
+    }
+    html.font-en .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    .glow-card {
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glow-card:hover {
+      box-shadow: 0 16px 32px -8px rgba(37, 99, 235, 0.22);
+    }
+
+    .glow-emerald:hover {
+      box-shadow: 0 16px 32px -8px rgba(16, 185, 129, 0.25);
+    }
+
+    .glow-vhr:hover {
+      box-shadow: 0 16px 32px -8px rgba(2, 132, 199, 0.25);
+    }
+
+    .hero-pattern {
+      background-image: radial-gradient(rgba(37, 99, 235, 0.12) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .view-content {
+      animation: fadeIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 antialiased transition-colors duration-300 selection:bg-blue-600 selection:text-white flex flex-col min-h-screen">
+
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/92 dark:bg-slate-950/92 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 transition-colors duration-300 shadow-sm">
+    <div id="topGradientBar" class="h-1 w-full bg-gradient-to-r from-blue-600 via-indigo-500 to-sky-400 transition-all duration-500"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-4 overflow-x-auto no-scrollbar whitespace-nowrap">
+      
+      <!-- Brand & Status Live Pulse -->
+      <div class="flex items-center gap-3 shrink-0">
+        <button onclick="navigateView('home', 'top')" class="font-heading text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2 group text-left cursor-pointer">
+          <span id="brandPulseDot" class="w-2.5 h-2.5 rounded-full bg-blue-600 dark:bg-blue-500 animate-pulse group-hover:scale-125 transition-transform shrink-0"></span>
+          <span>VIET ANH TRAN</span>
+        </button>
+
+        <div class="hidden xl:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-[11px] font-mono font-medium text-emerald-600 dark:text-emerald-400 shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping shrink-0"></span>
+          <span data-i18n="headerStatus">Tư vấn Chiến lược & Tăng trưởng</span>
+        </div>
+      </div>
+
+      <!-- Navigation Router Tabs -->
+      <nav class="flex items-center gap-1.5 sm:gap-2 lg:gap-3 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 shrink-0">
+        <button onclick="navigateView('home', 'top')" id="navLinkHome" class="px-3 py-1.5 rounded-xl text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/40 font-bold transition-all cursor-pointer">
+          <span data-i18n="navHome">Trang Chủ</span>
+        </button>
+
+        <!-- Dropdown / Submenu Vinasoy -->
+        <div class="relative group/drop">
+          <button id="navLinkVinasoyGroup" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl hover:text-emerald-600 dark:hover:text-emerald-400 transition-all cursor-pointer">
+            <i data-lucide="layers" class="w-3.5 h-3.5 text-emerald-500 shrink-0"></i>
+            <span>Vinasoy</span>
+            <i data-lucide="chevron-down" class="w-3 h-3 text-slate-400 group-hover/drop:rotate-180 transition-transform"></i>
+          </button>
+          <div class="absolute left-0 mt-1 w-56 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl py-2 hidden group-hover/drop:block z-50">
+            <button onclick="navigateView('vinasoy', 'top')" class="w-full text-left px-4 py-2.5 text-xs hover:bg-emerald-500/10 hover:text-emerald-600 flex items-center gap-2 cursor-pointer">
+              <i data-lucide="layout-grid" class="w-3.5 h-3.5 text-emerald-500"></i>
+              <span>10 Mega Projects (Batch 1)</span>
+            </button>
+            <button onclick="navigateView('vinasoy-arch', 'top')" class="w-full text-left px-4 py-2.5 text-xs hover:bg-emerald-500/10 hover:text-emerald-600 flex items-center gap-2 cursor-pointer">
+              <i data-lucide="git-pull-request" class="w-3.5 h-3.5 text-emerald-500"></i>
+              <span>Brand Architecture & CFT</span>
+            </button>
+          </div>
+        </div>
+
+        <button onclick="navigateView('vhr', 'top')" id="navLinkVhr" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl hover:text-sky-600 dark:hover:text-sky-400 transition-all cursor-pointer">
+          <i data-lucide="home" class="w-3.5 h-3.5 text-sky-500 shrink-0"></i>
+          <span>VHR 2022</span>
+        </button>
+
+        <button onclick="navigateView('ai-lean', 'top')" id="navLinkAiLean" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl hover:text-indigo-600 dark:hover:text-indigo-400 transition-all cursor-pointer">
+          <i data-lucide="cpu" class="w-3.5 h-3.5 text-indigo-500 shrink-0"></i>
+          <span>AI Lean Partner</span>
+        </button>
+
+        <button onclick="navigateView('reports', 'top')" id="navLinkReports" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 transition-all cursor-pointer">
+          <i data-lucide="bar-chart-2" class="w-3.5 h-3.5 text-blue-500 shrink-0"></i>
+          <span data-i18n="navReports">Báo Cáo Nghiên Cứu</span>
+        </button>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <button id="langToggle" class="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 text-xs font-mono font-semibold text-slate-700 dark:text-slate-200 hover:border-blue-500 transition-all flex items-center gap-1 shadow-sm shrink-0 cursor-pointer" title="Chuyển ngôn ngữ VI / EN">
+          <i data-lucide="languages" class="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 shrink-0"></i>
+          <span id="langLabel">EN</span>
+        </button>
+
+        <button id="themeToggle" class="p-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:border-blue-500 transition-all shadow-sm shrink-0 cursor-pointer" title="Chế độ Sáng / Tối">
+          <i id="themeIconSun" data-lucide="sun" class="w-4 h-4 hidden"></i>
+          <i id="themeIconMoon" data-lucide="moon" class="w-4 h-4 hidden"></i>
+        </button>
+
+        <a href="mailto:vianhtran25@gmail.com" class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded-xl bg-blue-600 text-white hover:bg-blue-500 hover:shadow-md hover:shadow-blue-600/30 transition-all shadow-sm shrink-0">
+          <i data-lucide="send" class="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0"></i>
+          <span data-i18n="navContact">Kết nối</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20 flex-grow">
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 1: TRANG CHỦ PORTFOLIO (HOME VIEW) -->
+    <!-- ========================================================================= -->
+    <div id="viewHome" class="view-content">
+
+      <section id="about" class="relative min-h-[85vh] flex items-center justify-center py-20 px-6 hero-pattern overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[540px] h-[540px] bg-blue-500/10 dark:bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-mono text-blue-600 dark:text-blue-400 shadow-sm hover:border-blue-500 transition-colors">
+            <i data-lucide="compass" class="w-4 h-4 text-blue-500"></i>
+            <span data-i18n="heroBadge">TƯ DUY ĐA CHIỀU · NGHIÊN CỨU ĐỘT PHÁ · ĐIỀU PHỐI GIÁ TRỊ TĂNG TRƯỞNG</span>
+          </div>
+          
+          <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.18]" data-i18n="heroTitle">
+            Kiến Tạo Tăng Trưởng Doanh Nghiệp & Định Hình Quỹ Đạo Thị Trường.
+          </h1>
+          
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed font-normal" data-i18n="heroDesc">
+            Giám đốc Tư vấn Chiến lược tại Brandmaker. Chuyên sâu về tái cấu trúc doanh nghiệp, thiết kế lộ trình thâm nhập thị trường (GTM) và chuyển hóa dữ liệu thị trường phức hợp thành các mô hình kinh doanh tạo dòng tiền bền vững.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center gap-3.5 pt-2">
+            <a href="#experience" class="px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-xs uppercase tracking-wider hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-600/25 transition-all flex items-center gap-2">
+              <span data-i18n="btnExp">Xem Hành Trình Nghề Nghiệp</span>
+              <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+            </a>
+
+            <button onclick="navigateView('vinasoy', 'top')" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs uppercase tracking-wider hover:shadow-lg hover:shadow-emerald-600/25 transition-all flex items-center gap-2 cursor-pointer">
+              <i data-lucide="layers" class="w-4 h-4"></i>
+              <span>Vinasoy 10 Mega Projects</span>
+            </button>
+            
+            <button onclick="navigateView('ai-lean', 'top')" class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs uppercase tracking-wider hover:shadow-lg hover:shadow-indigo-600/25 transition-all flex items-center gap-2 cursor-pointer">
+              <i data-lucide="cpu" class="w-4 h-4"></i>
+              <span>AI Lean Partner FMCG</span>
+            </button>
+
+            <button onclick="navigateView('vhr', 'top')" class="px-6 py-3.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-semibold text-xs uppercase tracking-wider hover:shadow-lg hover:shadow-sky-600/25 transition-all flex items-center gap-2 cursor-pointer">
+              <i data-lucide="home" class="w-4 h-4"></i>
+              <span>Vietnam Home Report</span>
+            </button>
+          </div>
+
+          <div class="pt-8 border-t border-slate-200 dark:border-slate-800/80 flex flex-wrap items-center justify-center gap-y-3 gap-x-8 text-xs font-mono text-slate-500 dark:text-slate-400">
+            <span class="flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-500"></i> TP. Hồ Chí Minh, Việt Nam</span>
+            <a href="tel:0903096255" class="flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><i data-lucide="phone" class="w-3.5 h-3.5 text-blue-500"></i> (+84) 903.096.255</a>
+            <a href="mailto:vianhtran25@gmail.com" class="flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><i data-lucide="mail" class="w-3.5 h-3.5 text-blue-500"></i> vianhtran25@gmail.com</a>
+            <span class="flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-blue-500"></i> B.Com, RMIT Vietnam</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="competencies" class="py-24 px-6 bg-slate-100/70 dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800/60 transition-colors">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-14">
+            <p class="text-xs font-mono tracking-widest text-blue-600 dark:text-blue-400 uppercase mb-2" data-i18n="compSub">Khung Năng Lực Cốt Lõi</p>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight" data-i18n="compTitle">Năng Lực Chuyên Môn & Hệ Thống Công Cụ</h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glow-card group p-6 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-500 hover:-translate-y-1.5 flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                  <i data-lucide="target" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2" data-i18n="p1Title">Chiến Lược & Tăng Trưởng Quy Mô</h3>
+                <p class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed mb-4" data-i18n="p1Desc">
+                  Chẩn đoán sức khỏe doanh nghiệp, hoạch định mô hình OGSM 10-5-3 năm, thiết lập hệ thống thẻ điểm cân bằng (SBSC) và lộ trình đổi mới sáng tạo nội bộ.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 text-[11px] font-mono text-blue-600 dark:text-blue-400 font-medium">
+                ArchiMate · Enterprise Architecture · OGSM
+              </div>
+            </div>
+
+            <div class="glow-card group p-6 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-500 hover:-translate-y-1.5 flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                  <i data-lucide="briefcase" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2" data-i18n="p2Title">Hệ Thống Vận Hành Thương Mại</h3>
+                <p class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed mb-4" data-i18n="p2Desc">
+                  Thực thi chiến lược Go-To-Market toàn phễu, xây dựng hệ thống Inside-Sales và thiết lập mạng lưới đối tác chiến lược B2B sâu rộng.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 text-[11px] font-mono text-blue-600 dark:text-blue-400 font-medium">
+                GTM Penetration · Sales Enablement · Alliances
+              </div>
+            </div>
+
+            <div class="glow-card group p-6 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-500 hover:-translate-y-1.5 flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                  <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2" data-i18n="p3Title">Dữ Liệu Thông Minh & Phân Tích</h3>
+                <p class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed mb-4" data-i18n="p3Desc">
+                  Mô hình hóa đường ống dữ liệu (data pipeline), thiết kế dashboard BI điều hành, phân khúc không gian nhu cầu (Demand-Space) và dự báo xu hướng tiêu dùng vĩ mô.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 text-[11px] font-mono text-blue-600 dark:text-blue-400 font-medium">
+                BigQuery · SQL · Tableau · Power BI · Python
+              </div>
+            </div>
+
+            <div class="glow-card group p-6 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-500 hover:-translate-y-1.5 flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                  <i data-lucide="cpu" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2" data-i18n="p4Title">Trí Tuệ Nhân Tạo & Tự Động Hóa</h3>
+                <p class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed mb-4" data-i18n="p4Desc">
+                  Chuẩn hóa quy trình vận hành với Generative AI, xây dựng hệ thống tổng hợp tri thức qua LLM và tự động hóa quy trình no-code đa nền tảng.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 text-[11px] font-mono text-blue-600 dark:text-blue-400 font-medium">
+                NotebookLM · Gemini · Make.com · Zapier
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="mb-14 text-center">
+            <p class="text-xs font-mono tracking-widest text-blue-600 dark:text-blue-400 uppercase mb-2" data-i18n="expSub">Quỹ Đạo Sự Nghiệp</p>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight" data-i18n="expTitle">Dấu Ấn Điều Hành & Tư Vấn Chiến Lược</h2>
+          </div>
+
+          <div class="relative border-l-2 border-slate-200 dark:border-slate-800 ml-4 sm:ml-36 space-y-12">
+            
+            <!-- Kinh nghiệm 1: Brandmaker Hiện tại (Đã tích hợp link AI Lean Partner & 2 Video) -->
+            <div class="relative pl-8 group">
+              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 dark:bg-blue-500 ring-4 ring-white dark:ring-slate-950 group-hover:scale-125 transition-transform"></div>
+              <div class="sm:absolute sm:-left-40 top-1 text-xs font-mono text-blue-600 dark:text-blue-400 font-bold mb-2 sm:mb-0" data-i18n="e1Time">
+                02/2026 — Hiện tại
+              </div>
+              
+              <div class="glow-card p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/60 border-2 border-indigo-500/30 hover:border-indigo-500 hover:-translate-y-1 transition-all shadow-md relative overflow-hidden">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+                  <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800" data-i18n="e1Tag">Tư Vấn Quản Trị Cấp Cao</span>
+                  
+                  <!-- Nút điều hướng nhanh đến trang con AI Lean Partner -->
+                  <button onclick="navigateView('ai-lean', 'top')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-sm transition-all group/btn cursor-pointer">
+                    <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                    <span>Xem Mô Hình AI Lean Partner</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform"></i>
+                  </button>
+                </div>
+
+                <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white" data-i18n="e1Role">Giám Đốc Tư Vấn Chiến Lược</h3>
+                <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-4">Brandmaker Ltd. Co.</p>
+                
+                <ul class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-300 space-y-2.5 list-disc list-inside leading-relaxed mb-5">
+                  <li data-i18n="e1Point1">Chủ trì các chương trình chuyển đổi doanh nghiệp toàn diện trên 4 trụ cột: Chiến lược Tăng trưởng, Quản trị Tiếp thị, Truyền thông Doanh nghiệp và Hệ sinh thái Thương mại B2B.</li>
+                  <li data-i18n="e1Point2">Thực hiện chẩn đoán năng lực lõi, điều phối sự đồng thuận cấp C-suite và tái thiết kế kiến trúc doanh nghiệp nhằm thích ứng với chu kỳ kinh tế mới.</li>
+                  <li>Khởi xướng và thiết kế khung vận hành <strong>AI Lean Partner FMCG</strong>: Biến lực lượng bán hàng thành Chủ tiệm (Store Owner) & Nhà phân phối vi mô (Micro-Distributor) với trợ lực AI Copilot, giảm 16–29% chi phí phục vụ.</li>
+                </ul>
+
+                <!-- Cụm Card Kết Nối Trang Con & 2 Video Đính Kèm -->
+                <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-indigo-500/20 space-y-3">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-2.5">
+                    <div class="flex items-center gap-2">
+                      <div class="w-7 h-7 rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                      </div>
+                      <div>
+                        <p class="text-xs font-bold text-slate-900 dark:text-white">Dự Án Tiêu Biểu: AI Lean Partner FMCG Model</p>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400">Trợ lực bởi Zalo Copilot · Tinh gọn bộ máy, không ai bị bỏ lại</p>
+                      </div>
+                    </div>
+                    <button onclick="navigateView('ai-lean', 'top')" class="text-[11px] font-mono font-semibold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1 self-start sm:self-auto cursor-pointer">
+                      <span>Xem Toàn Bộ Trang Con</span>
+                      <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </button>
+                  </div>
+
+                  <!-- 2 Nút Video Đính Kèm -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+                    <button onclick="navigateView('ai-lean', 'videoContainer1'); switchVideo(1);" class="p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-indigo-500 text-left flex items-center justify-between gap-2 transition-all group/vid cursor-pointer shadow-sm">
+                      <div class="flex items-center gap-2">
+                        <div class="w-6 h-6 rounded-md bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center group-hover/vid:bg-indigo-600 group-hover/vid:text-white transition-colors shrink-0">
+                          <i data-lucide="play" class="w-3.5 h-3.5"></i>
+                        </div>
+                        <div>
+                          <p class="text-xs font-semibold text-slate-900 dark:text-white leading-tight">Video 1: Mô Hình Chi Tiết</p>
+                          <p class="text-[10px] text-slate-500 font-mono">01:20 · Giải pháp Store Owner</p>
+                        </div>
+                      </div>
+                      <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-400 group-hover/vid:translate-x-0.5 transition-transform shrink-0"></i>
+                    </button>
+
+                    <button onclick="navigateView('ai-lean', 'videoContainer2'); switchVideo(2);" class="p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-indigo-500 text-left flex items-center justify-between gap-2 transition-all group/vid cursor-pointer shadow-sm">
+                      <div class="flex items-center gap-2">
+                        <div class="w-6 h-6 rounded-md bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center group-hover/vid:bg-indigo-600 group-hover/vid:text-white transition-colors shrink-0">
+                          <i data-lucide="play" class="w-3.5 h-3.5"></i>
+                        </div>
+                        <div>
+                          <p class="text-xs font-semibold text-slate-900 dark:text-white leading-tight">Video 2: Đối Chuẩn Quốc Tế</p>
+                          <p class="text-[10px] text-slate-500 font-mono">01:52 · Mentor Research & Án lệ</p>
+                        </div>
+                      </div>
+                      <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-400 group-hover/vid:translate-x-0.5 transition-transform shrink-0"></i>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="relative pl-8 group">
+              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-white dark:ring-slate-950 group-hover:scale-125 transition-transform"></div>
+              <div class="sm:absolute sm:-left-40 top-1 text-xs font-mono text-slate-500 dark:text-slate-400 font-semibold mb-2 sm:mb-0" data-i18n="e2Time">
+                2023 — 02/2026
+              </div>
+              
+              <div class="glow-card p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/60 border-2 border-blue-500/40 hover:border-blue-500 hover:-translate-y-1 transition-all shadow-md relative overflow-hidden">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+                  <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800" data-i18n="e2Tag">SaaS & AI Công Nghiệp Sản Xuất</span>
+                  
+                  <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="openCaseStudyModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-sm transition-all group/btn cursor-pointer">
+                      <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                      <span data-i18n="e2BtnCaseStudy">Xem Sơ Đồ Lead Engine</span>
+                    </button>
+                    
+                    <button onclick="navigateView('reports', 'top')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-blue-500 text-slate-700 dark:text-slate-200 text-xs font-semibold shadow-sm transition-all cursor-pointer">
+                      <i data-lucide="bar-chart-2" class="w-3.5 h-3.5 text-blue-500"></i>
+                      <span data-i18n="e2BtnReports">Báo Cáo Nghiên Cứu VN & ASEAN</span>
+                      <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white" data-i18n="e2Role">Quản Lý Cấp Cao Phát Triển Thương Hiệu & Kinh Doanh</h3>
+                <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-4">CADDi Vietnam (CADDi Inc. Japan)</p>
+                <ul class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-300 space-y-2.5 list-disc list-inside leading-relaxed mb-5">
+                  <li data-i18n="e2Point1">Chủ trì nghiên cứu tiền khả thi và thiết lập lộ trình Go-To-Market đưa nền tảng CADDi Drawer thâm nhập thị trường Việt Nam, Singapore và Malaysia.</li>
+                  <li data-i18n="e2Point2">Thiết kế và chuẩn hóa từ đầu hệ sinh thái vận hành Tiếp thị Thương hiệu & Inside-Sales nhằm thương mại hóa giải pháp phần mềm AI.</li>
+                  <li data-i18n="e2Point3">Kiến tạo liên minh chiến lược với các hiệp hội công nghiệp chủ lực (VASI, HAMEE) và các cơ quan xúc tiến thương mại, củng cố mức độ tin cậy của giải pháp.</li>
+                </ul>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                  <div onclick="openCaseStudyModal()" class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 cursor-pointer hover:border-blue-500 transition-colors">
+                    <div class="flex items-center gap-2.5">
+                      <i data-lucide="git-merge" class="w-4 h-4 text-blue-500 shrink-0"></i>
+                      <div>
+                        <p class="text-xs font-bold text-slate-900 dark:text-white">Lead Generation Model</p>
+                        <p class="text-[11px] text-slate-500">Sơ đồ phễu 5 tầng & kịch bản SDR</p>
+                      </div>
+                    </div>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+                  </div>
+
+                  <div onclick="navigateView('reports', 'top')" class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 hover:border-blue-500 transition-colors cursor-pointer">
+                    <div class="flex items-center gap-2.5">
+                      <i data-lucide="pie-chart" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                      <div>
+                        <p class="text-xs font-bold text-slate-900 dark:text-white">Thị Trường VN & ASEAN</p>
+                        <p class="text-[11px] text-slate-500">Mô hình PESTLE & 4 trục tăng trưởng</p>
+                      </div>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="relative pl-8 group">
+              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 ring-4 ring-white dark:ring-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition-transform"></div>
+              <div class="sm:absolute sm:-left-40 top-1 text-xs font-mono text-slate-500 dark:text-slate-400 font-semibold mb-2 sm:mb-0">
+                2018 — 2022
+              </div>
+              
+              <div class="glow-card p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/80 hover:-translate-y-1 transition-all shadow-sm">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                  <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700" data-i18n="e3Tag">Tư Vấn Quản Trị & Tái Cấu Trúc</span>
+                  
+                  <div class="flex items-center gap-2">
+                    <button onclick="navigateView('vinasoy', 'top')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-sm transition-all group/btn cursor-pointer">
+                      <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                      <span>Vinasoy 10 Mega Projects</span>
+                    </button>
+                    <button onclick="navigateView('vinasoy-arch', 'top')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/20 text-xs font-semibold shadow-sm transition-all cursor-pointer">
+                      <i data-lucide="git-pull-request" class="w-3.5 h-3.5"></i>
+                      <span>Kiến Trúc & CFT</span>
+                    </button>
+                  </div>
+                </div>
+
+                <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white" data-i18n="e3Role">Trưởng Bộ Phận Tư Vấn Chiến Lược</h3>
+                <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-4">Brandmaker Ltd. Co.</p>
+                <ul class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-300 space-y-2.5 list-disc list-inside leading-relaxed mb-4">
+                  <li data-i18n="e3Point1"><strong>Tập đoàn FPT:</strong> Chủ trì chẩn đoán bản sắc lõi và tái định vị thương hiệu tập đoàn (2018–2020).</li>
+                  <li data-i18n="e3Point2"><strong>Vinasoy Corporation:</strong> Khởi tạo và thiết kế kiến trúc hệ thống 10 Mega Projects, lộ trình tăng trưởng 2019–2030, OGSM 10-5-3 năm và khung quản trị tri thức Playbook đa tầng.</li>
+                  <li data-i18n="e3Point3"><strong>West Food & Flexit:</strong> Thực hiện chẩn đoán mô hình kinh doanh, phát triển danh mục cơ hội tăng trưởng mới và tái thiết kế cấu trúc thương hiệu.</li>
+                </ul>
+
+                <div onclick="navigateView('vinasoy', 'top')" class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 hover:border-emerald-500 transition-colors cursor-pointer">
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                      <i data-lucide="git-branch" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                      <p class="text-xs font-bold text-slate-900 dark:text-white">Vinasoy 10 Mega Projects Architecture</p>
+                      <p class="text-[11px] text-slate-500">Mô hình Playbook Kênh, Toll-Gates R&D, và Chuyển đổi Văn hóa Joy at Work</p>
+                    </div>
+                  </div>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="relative pl-8 group">
+              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 ring-4 ring-white dark:ring-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition-transform"></div>
+              <div class="sm:absolute sm:-left-40 top-1 text-xs font-mono text-slate-500 dark:text-slate-400 font-semibold mb-2 sm:mb-0">
+                2016 — 2017
+              </div>
+              
+              <div class="glow-card p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500/80 hover:-translate-y-1 transition-all shadow-sm">
+                <div class="flex items-center justify-between gap-4 mb-2">
+                  <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700" data-i18n="e4Tag">Kỳ Lân Công Nghệ Khu Vực</span>
+                </div>
+                <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white" data-i18n="e4Role">Giám Đốc Phát Triển Kinh Doanh Cấp Cao</h3>
+                <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-4">Paktor Ltd. Co. Vietnam</p>
+                <ul class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-300 space-y-2.5 list-disc list-inside leading-relaxed">
+                  <li data-i18n="e4Point1">Khởi tạo, ra mắt và tối ưu hóa mô hình vận hành thương mại cho dịch vụ Paktor Prime tại thị trường Việt Nam.</li>
+                  <li data-i18n="e4Point2">Tuyển dụng, cơ cấu và dẫn dắt đội ngũ đa chức năng; kiến tạo mạng lưới tiếp thị liên kết (affiliate) và quan hệ đối tác quy mô lớn.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="relative pl-8 group">
+              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 ring-4 ring-white dark:ring-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition-transform"></div>
+              <div class="sm:absolute sm:-left-40 top-1 text-xs font-mono text-slate-500 dark:text-slate-400 font-semibold mb-2 sm:mb-0">
+                2010 — 2016
+              </div>
+              
+              <div class="glow-card p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500/80 hover:-translate-y-1 transition-all shadow-sm">
+                <div class="flex items-center justify-between gap-4 mb-2">
+                  <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700" data-i18n="e5Tag">Nghiên Cứu Thị Trường Chuyên Nghiệp</span>
+                </div>
+                <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white" data-i18n="e5Role">Phó Giám Đốc Nghiên Cứu & Chuyên Viên Nghiên Cứu Định Tính</h3>
+                <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-4">Green Horizon Research & Ipsos Vietnam</p>
+                <ul class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-300 space-y-2.5 list-disc list-inside leading-relaxed">
+                  <li data-i18n="e5Point1">Tiên phong chuyển giao và nội địa hóa các mô hình nghiên cứu chuẩn quốc tế (Censydiam, Demand-Space) trong giai đoạn định hình các chuẩn mực ngành FMCG Việt Nam.</li>
+                  <li data-i18n="e5Point2">Trực tiếp quản lý và thực hiện các dự án tình báo thị trường chuyên sâu cho các khách hàng đa quốc gia: Toyota / Lexus, Mundipharma, Roche, và HSBC.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="credentials" class="py-24 px-6 bg-slate-100/70 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800 transition-colors">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-14">
+            <p class="text-xs font-mono tracking-widest text-blue-600 dark:text-blue-400 uppercase mb-2" data-i18n="certSub">Hệ Thống Văn Bằng Chuyên Nghiệp</p>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight" data-i18n="certTitle">Năng Lực Phân Tích Dữ Liệu & Ứng Dụng AI</h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="glow-card group p-7 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-500 hover:-translate-y-1.5 transition-all flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs font-mono text-blue-600 dark:text-blue-400 font-semibold">Google / Coursera</span>
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" data-i18n="c1Title">Chứng Chỉ Chuyên Nghiệp Google Business Intelligence</h3>
+                <p class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed mb-6" data-i18n="c1Desc">
+                  Xác nhận năng lực toàn diện về quy trình BI, mô hình hóa dữ liệu nâng cao, kiến trúc đường ống trích xuất ETL và thiết kế bảng điều khiển trực quan hóa (dashboard) cho cấp lãnh đạo qua BigQuery, SQL và Tableau.
+                </p>
+              </div>
+              <a href="https://www.coursera.org/account/accomplishments/professional-cert/RVJXB079SVP4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                <span data-i18n="certLink">Xác Thực Chứng Chỉ Số</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+            <div class="glow-card group p-7 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-500 hover:-translate-y-1.5 transition-all flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs font-mono text-blue-600 dark:text-blue-400 font-semibold">Google / Coursera</span>
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" data-i18n="c2Title">The Path to Insights: Data Models and Pipelines (Google)</h3>
+                <p class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed mb-6" data-i18n="c2Desc">
+                  Năng lực chuyên sâu về thiết kế lược đồ (schema), cấu trúc mô hình dữ liệu quan hệ và tự động hóa quy trình nạp dữ liệu liên tục phục vụ hệ thống phân tích thời gian thực.
+                </p>
+              </div>
+              <a href="https://www.coursera.org/account/accomplishments/verify/EZ8QZ3AM2RFH" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                <span data-i18n="certLink">Xác Thực Chứng Chỉ Số</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+            <div class="glow-card group p-7 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-500 hover:-translate-y-1.5 transition-all flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs font-mono text-blue-600 dark:text-blue-400 font-semibold">Google / Coursera</span>
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" data-i18n="c3Title">Chứng Chỉ Chuyên Nghiệp Google Data Analytics</h3>
+                <p class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed mb-6" data-i18n="c3Desc">
+                  Hệ thống 8 khóa đào tạo chuẩn quốc tế chứng minh năng lực thu thập, làm sạch, phân tích khám phá dữ liệu (EDA) và trực quan hóa chuyên sâu thông qua SQL, Tableau và ngôn ngữ R.
+                </p>
+              </div>
+              <a href="https://www.coursera.org/account/accomplishments/professional-cert/GMHCLJPXMCKC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                <span data-i18n="certLink">Xác Thực Chứng Chỉ Số</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+            <div class="glow-card group p-7 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-500 hover:-translate-y-1.5 transition-all flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs font-mono text-blue-600 dark:text-blue-400 font-semibold">Google / Credly</span>
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" data-i18n="c4Title">Google AI Essentials</h3>
+                <p class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed mb-6" data-i18n="c4Desc">
+                  Chứng chỉ kỹ thuật số xác nhận năng lực cốt lõi về trí tuệ nhân tạo tạo sinh (GenAI), kỹ nghệ ra lệnh (Prompt Engineering) và phương pháp tích hợp AI vào quy trình nâng cao hiệu suất doanh nghiệp.
+                </p>
+              </div>
+              <a href="https://www.credly.com/badges/4f19b5a0-d000-49f1-b0f9-95a8eda3950e/print" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                <span data-i18n="certLink">Xác Thực Chứng Chỉ Số</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 2: CASE STUDY CHUYÊN SÂU VINASOY 10 MEGA PROJECTS (VINASOY VIEW) -->
+    <!-- ========================================================================= -->
+    <div id="viewVinasoy" class="view-content hidden pb-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-16">
+        
+        <!-- Header Controls & Status Pill -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+          <div class="flex items-center gap-2">
+            <button onclick="navigateView('home', 'experience')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:border-emerald-500 hover:text-emerald-600 transition-all cursor-pointer">
+              <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+              <span data-i18n="navBackHome">Quay Lại Mục Kinh Nghiệm</span>
+            </button>
+            <button onclick="navigateView('vinasoy-arch', 'top')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-semibold hover:bg-emerald-500/20 transition-all cursor-pointer">
+              <i data-lucide="git-pull-request" class="w-3.5 h-3.5"></i>
+              <span>Xem Kiến Trúc & CFT Vinasoy</span>
+            </button>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-xs font-mono font-bold tracking-wider text-slate-500 dark:text-slate-400 uppercase">Brandmaker Enterprise Transformation Case Study</span>
+          </div>
+        </div>
+
+        <!-- Case Study Header Banner -->
+        <div>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 mb-4">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+            <span>ENTERPRISE TRANSFORMATION CASE STUDY</span>
+          </div>
+
+          <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.2] mb-4" data-i18n="vnsTitle">
+            Vinasoy Mega Projects: Tái Thiết Kế Kiến Trúc Doanh Nghiệp & Hệ Thống Đổi Mới Sáng Tạo
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-4xl leading-relaxed mb-6" data-i18n="vnsDesc">
+            Chương trình tư vấn chuyển đổi toàn diện do Brandmaker dẫn dắt cho Vinasoy (QNS), thiết kế khung tích hợp 10 Mega Projects đồng bộ từ nghiên cứu R&D, kiểm soát cổng lọc sản phẩm mới, xây dựng kho tri thức Playbook đa kênh đến quản trị thay đổi văn hóa tổ chức.
+          </p>
+
+          <!-- Context Meta-Bar -->
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-mono">
+            <div>
+              <span class="text-slate-400 block mb-1">Khách Hàng</span>
+              <span class="font-semibold text-slate-900 dark:text-white">Vinasoy (QNS Group)</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block mb-1">Vai Trò Đảm Nhiệm</span>
+              <span class="font-semibold text-emerald-600 dark:text-emerald-400">Senior Strategic Consultant</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block mb-1">Giai Đoạn Triển Khai</span>
+              <span class="font-semibold text-slate-900 dark:text-white">2019 — 2022</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block mb-1">Phạm Vi Chiến Lược</span>
+              <span class="font-semibold text-slate-900 dark:text-white">Lộ trình OGSM 2019-2030</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Key Metrics -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <span class="text-xs font-mono text-slate-400 block mb-1">Quy Mô Chương Trình</span>
+            <div class="font-heading text-2xl font-extrabold text-blue-600 dark:text-blue-400">10 Mega Projects</div>
+            <p class="text-[11px] text-slate-500 mt-1">Đồng bộ liên chức năng từ R&D đến Kênh</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <span class="text-xs font-mono text-emerald-600 dark:text-emerald-400 block mb-1">Cấu Trúc Quản Trị Tri Thức</span>
+            <div class="font-heading text-2xl font-extrabold text-emerald-600 dark:text-emerald-400">5 Tầng Playbook</div>
+            <p class="text-[11px] text-slate-500 mt-1">Handbook ➔ Guide ➔ Case ➔ Playbook ➔ IP</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 block mb-1">Cổng Sàng Lọc Đổi Mới</span>
+            <div class="font-heading text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">5 Cổng Toll-Gates</div>
+            <p class="text-[11px] text-slate-500 mt-1">Từ Sensory Lab đến Thẩm định Win/Lose</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <span class="text-xs font-mono text-amber-600 dark:text-amber-400 block mb-1">Khung Hoạch Định</span>
+            <div class="font-heading text-2xl font-extrabold text-amber-600 dark:text-amber-400">OGSM 10-5-3 Năm</div>
+            <p class="text-[11px] text-slate-500 mt-1">SBSC & Năng lực động (Dynamic Capabilities)</p>
+          </div>
+        </div>
+
+        <!-- 10 MEGA PROJECTS BLUEPRINT -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg">
+          <div class="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <span class="text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 uppercase">10 Projects Batch 1st Overview</span>
+              <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mt-1">
+                Danh Mục 10 Mega Projects Trong Hệ Thống Vinasoy
+              </h3>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-[11px] font-mono text-slate-600 dark:text-slate-300 font-semibold">
+              Master Plan Batch 1
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 text-xs">
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 font-mono text-[10px] font-bold">CHANNEL PB</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">Phát Triển Playbook Kênh</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Chuẩn hóa thư viện tri thức kênh, kịch bản cạnh tranh và Winning Formula bán hàng.</p>
+              </div>
+              <span class="text-[10px] font-mono text-blue-500 mt-3 block font-semibold">Commercial System</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 font-mono text-[10px] font-bold">SEGMENT CT</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">Liquid Soy Segmentation</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Xây dựng ma trận nhu cầu, thư viện hương vị (Taste & Formula Library) và phân khúc khách hàng.</p>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-500 mt-3 block font-semibold">Consumer Insights</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 font-mono text-[10px] font-bold">TOLL-GATES IP</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">Cổng Sàng Lọc Đổi Mới</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Hệ thống 5 cửa kiểm duyệt ý tưởng từ Sensory Panel đến thẩm định ROI thực tế trước khi tung hàng.</p>
+              </div>
+              <span class="text-[10px] font-mono text-indigo-500 mt-3 block font-semibold">R&D Governance</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-900/50 text-sky-700 dark:text-sky-300 font-mono text-[10px] font-bold">CHILLED-P PAS</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">Sữa Đậu Nành Thanh Trùng</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Project khởi động phân khúc sữa đậu nành thanh trùng, mở rộng sang chuỗi cung ứng lạnh.</p>
+              </div>
+              <span class="text-[10px] font-mono text-sky-500 mt-3 block font-semibold">New Category</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 font-mono text-[10px] font-bold">PRODUCT 360</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">Product & Channel 360</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Tích hợp đồng bộ IMC, Sản xuất, Bán hàng và Kế hoạch Tài chính theo chu kỳ 360 độ.</p>
+              </div>
+              <span class="text-[10px] font-mono text-purple-500 mt-3 block font-semibold">Process Integration</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300 font-mono text-[10px] font-bold">CO-ARCHITECT BA</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">Cấu Trúc Doanh Nghiệp</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Tái cấu trúc vai trò, năng lực động (Dynamic Capabilities) và hệ thống giá trị tổ chức.</p>
+              </div>
+              <span class="text-[10px] font-mono text-amber-500 mt-3 block font-semibold">Business Architecture</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 font-mono text-[10px] font-bold">MANA-MODEL 2022</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">Hệ Thống Ra Quyết Định</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Thiết lập 4 hệ thống điều hành: DS (Ra quyết định), CPS (Truyền thông), KIS và MS.</p>
+              </div>
+              <span class="text-[10px] font-mono text-teal-500 mt-3 block font-semibold">Decision Engine</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-rose-100 dark:bg-rose-900/50 text-rose-700 dark:text-rose-300 font-mono text-[10px] font-bold">JOY AT WORK CM</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">Quản Trị Thay Đổi</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Khung 4 bước: Define, Communicate & Engage, Prepare và Embed in Culture.</p>
+              </div>
+              <span class="text-[10px] font-mono text-rose-500 mt-3 block font-semibold">Change Management</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-orange-100 dark:bg-orange-900/50 text-orange-700 dark:text-orange-300 font-mono text-[10px] font-bold">I-BUSINESS 6Ps</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">6Ps Thị Trường Quốc Tế</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Mô hình mở rộng và thương mại hóa thị trường nước ngoài (Trung Quốc & khu vực).</p>
+              </div>
+              <span class="text-[10px] font-mono text-orange-500 mt-3 block font-semibold">Global Expansion</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-cyan-100 dark:bg-cyan-900/50 text-cyan-700 dark:text-cyan-300 font-mono text-[10px] font-bold">S-PLANNING R&D</span>
+                <h4 class="font-bold text-slate-900 dark:text-white mt-2 mb-1">Chiến Lược Phát Triển R&D</h4>
+                <p class="text-slate-500 text-[11px] leading-relaxed">Technology Scouting, quản trị sở hữu trí tuệ và nâng cao chất lượng nguồn hạt giống.</p>
+              </div>
+              <span class="text-[10px] font-mono text-cyan-500 mt-3 block font-semibold">R&D Intelligence</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 DEEP DIVE ARCHITECTURE DIAGRAMS -->
+        <div class="space-y-12">
+          <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+            <span class="text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 uppercase">Architecture Diagrams Deep-Dive</span>
+            <h3 class="font-heading text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">
+              Mô Hình Hóa 4 Hệ Thống Kiến Trúc Vận Hành Then Chốt
+            </h3>
+          </div>
+
+          <!-- SƠ ĐỒ 1: CHANNEL-PLAYBOOK MODEL -->
+          <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
+            <div>
+              <span class="px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs font-mono font-bold">HỆ THỐNG 01</span>
+              <h4 class="font-heading text-xl font-bold text-slate-900 dark:text-white mt-2">
+                Mô Hình Quản Trị Tri Thức & Channel-Playbook (Knowledge Governance System)
+              </h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                Chuẩn hóa luồng thông tin 5 tầng tri thức từ nhân viên kinh doanh thực địa đến Ban Giám Đốc.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-3 text-xs">
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-mono text-blue-500 font-bold block mb-1">Tầng 1: Handbook</span>
+                <p class="text-[11px] text-slate-500 mb-2">Đối tượng: Nhân viên / Giám sát bán hàng</p>
+                <p class="text-slate-600 dark:text-slate-400">Định nghĩa thuật ngữ, nhật ký thị trường, tra cứu danh mục sản phẩm và tự học hỏi.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-mono text-emerald-500 font-bold block mb-1">Tầng 2: Guidebook</span>
+                <p class="text-[11px] text-slate-500 mb-2">Đối tượng: Quản lý cấp trung / Huấn luyện</p>
+                <p class="text-slate-600 dark:text-slate-400">Bản đồ sa bàn, tài liệu đào tạo, quản lý cấu trúc thị trường và theo dõi vận hành.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-mono text-indigo-500 font-bold block mb-1">Tầng 3: Case-book</span>
+                <p class="text-[11px] text-slate-500 mb-2">Đối tượng: Trưởng bộ phận / Quản lý vùng</p>
+                <p class="text-slate-600 dark:text-slate-400">Bài học thực chiến, nguyên tắc phân tích tình huống, công thức cạnh tranh theo ngành hàng.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-mono text-amber-500 font-bold block mb-1">Tầng 4: Playbook</span>
+                <p class="text-[11px] text-slate-500 mb-2">Đối tượng: Giám đốc Khối / Senior Managers</p>
+                <p class="text-slate-600 dark:text-slate-400">Thư viện chiến thuật, ma trận ra quyết định (Decision-Matrix) và công thức chiến thắng (Winning Formula).</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-mono text-purple-500 font-bold block mb-1">Tầng 5: Intellectual Property</span>
+                <p class="text-[11px] text-slate-500 mb-2">Đối tượng: Hội đồng Quản trị</p>
+                <p class="text-slate-600 dark:text-slate-400">Thư viện chiến lược dài hạn, năng lực cốt lõi khác biệt và định hướng tương lai.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SƠ ĐỒ 2: SEGMENTATION & TASTE-FORMULA LIBRARY -->
+          <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
+            <div>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-bold">HỆ THỐNG 02</span>
+              <h4 class="font-heading text-xl font-bold text-slate-900 dark:text-white mt-2">
+                Hệ Thống Phân Khúc Khách Hàng & Thư Viện Hương Vị (Taste-Formula Library)
+              </h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                Cầu nối tương hỗ giữa Không gian nhu cầu (Demand Spaces) từ Marketing và Ma trận công thức R&D.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+                  <i data-lucide="compass" class="w-4 h-4 text-emerald-500"></i>
+                  <span>Insight & Demand Spaces</span>
+                </h5>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+                  Xác lập bản đồ nguồn khách hàng (Source of Customers), phân tích khoảng trống nhu cầu (Demand Spaces Concept) và hệ giá trị lợi ích sản phẩm.
+                </p>
+                <span class="text-[11px] font-mono text-emerald-500 font-semibold">Tích hợp từ Nghiên cứu thị trường</span>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+                  <i data-lucide="flask-conical" class="w-4 h-4 text-blue-500"></i>
+                  <span>Taste & Formula Matrix</span>
+                </h5>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+                  Lưu trữ ma trận công thức, thư viện nguyên liệu hạt đậu nành, lợi ích sức khỏe và định dạng bao bì từ R&D và Nhà cung cấp nguyên liệu.
+                </p>
+                <span class="text-[11px] font-mono text-blue-500 font-semibold">Thư viện công thức R&D</span>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+                  <i data-lucide="database" class="w-4 h-4 text-purple-500"></i>
+                  <span>Product Ideation Banks</span>
+                </h5>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+                  Ý tưởng sau khi qua bộ lọc Insights Filter (IF) được nạp vào ngân hàng ý tưởng, sẵn sàng đưa sang quy trình thẩm định Toll-Gates.
+                </p>
+                <span class="text-[11px] font-mono text-purple-500 font-semibold">Ngân hàng ý tưởng sẵn sàng</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SƠ ĐỒ 3: TOLL-GATES PRODUCT INNOVATION SYSTEM -->
+          <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
+            <div>
+              <span class="px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 text-xs font-mono font-bold">HỆ THỐNG 03</span>
+              <h4 class="font-heading text-xl font-bold text-slate-900 dark:text-white mt-2">
+                Quy Trình Kiểm Soát Cổng Lọc Đổi Mới Sản Phẩm (Toll-Gates Innovation Filtering)
+              </h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                Quy trình 5 cổng nghiêm ngặt sàng lọc rủi ro thương mại và tài chính trước khi đưa sản phẩm ra thị trường.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 text-xs">
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-bold text-indigo-500 block mb-1">Cổng 1: IF (Insights Filter)</span>
+                <p class="text-slate-600 dark:text-slate-400">Kiểm tra tính phù hợp giữa Nhu cầu thị trường & Năng lực công nghệ R&D.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-bold text-indigo-500 block mb-1">Cổng 2: IDF (Ideation Filter)</span>
+                <p class="text-slate-600 dark:text-slate-400">Sàng lọc ý tưởng cụ thể (Proto-Concept) và tích hợp tri thức liên phòng ban.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-bold text-indigo-500 block mb-1">Cổng 3: CF (Proto-Concept)</span>
+                <p class="text-slate-600 dark:text-slate-400">Thử nghiệm cảm quan (Sensory Panel) trên nhóm người tiêu dùng mục tiêu.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-bold text-indigo-500 block mb-1">Cổng 4: PT (Product Dev Filter)</span>
+                <p class="text-slate-600 dark:text-slate-400">Thử nghiệm Alpha/Beta với phòng Tài chính & Đầu tư, tối ưu chi phí mẻ thử.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-bold text-emerald-500 block mb-1">Cổng 5: WL & BDF</span>
+                <p class="text-slate-600 dark:text-slate-400">Bộ lọc Thắng/Thua (Win/Lose Filter) và phê duyệt kế hoạch tung hàng (Business Launching).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SƠ ĐỒ 4: BUSINESS ARCHITECTURE & MANA-MODEL -->
+          <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
+            <div>
+              <span class="px-2.5 py-0.5 rounded-full bg-teal-50 dark:bg-teal-900/40 text-teal-600 dark:text-teal-400 text-xs font-mono font-bold">HỆ THỐNG 04</span>
+              <h4 class="font-heading text-xl font-bold text-slate-900 dark:text-white mt-2">
+                Kiến Trúc Doanh Nghiệp & Mô Hình Quản Trị Động (Co-Architecture & Mana-Model)
+              </h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                Tích hợp 4 nền tảng điều phối chiến lược (DS - CPS - KIS - MS) gắn chặt với khung OGSM 10-5-3 năm.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xs">
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-bold text-teal-500 font-mono block mb-1">DS (Decision System)</span>
+                <p class="font-semibold text-slate-900 dark:text-white mb-1">Hệ Thống Ra Quyết Định</p>
+                <p class="text-slate-500 text-[11px]">Quy chuẩn hóa thẩm quyền phê duyệt chiến lược, ngân sách và phân quyền điều hành.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-bold text-teal-500 font-mono block mb-1">CPS (Communication System)</span>
+                <p class="font-semibold text-slate-900 dark:text-white mb-1">Nền Tảng Truyền Thông</p>
+                <p class="text-slate-500 text-[11px]">Đảm bảo thông tin xuyên suốt giữa R&D, Tiếp thị, Chuỗi cung ứng và Tài chính.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-bold text-teal-500 font-mono block mb-1">KIS (Knowledge System)</span>
+                <p class="font-semibold text-slate-900 dark:text-white mb-1">Hệ Thống Tri Thức</p>
+                <p class="text-slate-500 text-[11px]">Tập trung hóa dữ liệu nghiên cứu thị trường, bài học chiến dịch và tài sản trí tuệ.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                <span class="font-bold text-teal-500 font-mono block mb-1">MS (Measurement System)</span>
+                <p class="font-semibold text-slate-900 dark:text-white mb-1">Hệ Thống Đo Lường</p>
+                <p class="text-slate-500 text-[11px]">Dashboard theo dõi tiến độ sáng kiến (Initiative Calendar) và chỉ số thẻ điểm cân bằng (SBSC).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+          <button onclick="navigateView('home', 'experience')" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 text-white text-xs font-semibold uppercase tracking-wider hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-600/25 transition-all cursor-pointer">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span>Quay Lại Mục Kinh Nghiệm Trên Trang Chủ</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 3: VINASOY BRAND ARCHITECTURE & CFT COLLABORATION (VINASOY-ARCH) -->
+    <!-- ========================================================================= -->
+    <div id="viewVinasoyArch" class="view-content hidden pb-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-16">
+        
+        <!-- Header Controls -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+          <div class="flex items-center gap-2">
+            <button onclick="navigateView('home', 'experience')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:border-emerald-500 hover:text-emerald-600 transition-all cursor-pointer">
+              <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+              <span data-i18n="navBackHome">Quay Lại Mục Kinh Nghiệm</span>
+            </button>
+            <button onclick="navigateView('vinasoy', 'top')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl border border-emerald-500/30 bg-emerald-500/10 text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/20 transition-all cursor-pointer">
+              <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+              <span>10 Mega Projects Overview</span>
+            </button>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-xs font-mono font-bold tracking-wider text-slate-500 dark:text-slate-400 uppercase">Brand Architecture & Trend Engine Deep-Dive</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 mb-4">
+            <i data-lucide="git-pull-request" class="w-3.5 h-3.5"></i>
+            <span>ENTERPRISE ARCHITECTURE · TREND INTELLIGENCE · CFT INTEGRATION</span>
+          </div>
+
+          <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.2] mb-4">
+            Vinasoy Brand Architecture, Trend Matrix & Hệ Thống Phối Hợp Liên Phòng Ban
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-4xl leading-relaxed mb-6">
+            Hệ thống cấu trúc quản trị chuyển đổi toàn diện cho Vinasoy (QNS): Tái định nghĩa Bản sắc & Kiến trúc Thương hiệu theo STAR Model, bộ radar nhận diện 4 tầng xu hướng (Mega - Macro - Micro - Nano) đón đầu chu kỳ 2020–2030, và khung điều phối tác chiến liên phòng ban 3 tầng (3-Tier Functional Collaboration) bảo đảm mục tiêu tỷ đô.
+          </p>
+
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-mono">
+            <div>
+              <span class="text-slate-400 block mb-1">Khách Hàng</span>
+              <span class="font-semibold text-slate-900 dark:text-white">Vinasoy (QNS Group)</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block mb-1">Kiến Trúc Sư Trưởng</span>
+              <span class="font-semibold text-emerald-600 dark:text-emerald-400">Trần Việt Anh & CFT Core Team</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block mb-1">Khung Quản Trị</span>
+              <span class="font-semibold text-slate-900 dark:text-white">PMO / CFT / 3-Tier Matrix</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block mb-1">Chiến Lược Tăng Trưởng</span>
+              <span class="font-semibold text-slate-900 dark:text-white">Stretch from the Core (2020–2030)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Trụ cột STAR Model -->
+        <section class="space-y-8">
+          <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 uppercase">Trụ Cột 01</span>
+                <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mt-1">
+                  Kiến Trúc Thương Hiệu Đột Phá & Chiến Lược “Stretch From The Core”
+                </h3>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-[11px] font-mono text-slate-600 dark:text-slate-300 font-semibold">
+                STAR Architectural Model
+              </span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="glow-card p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400 uppercase">01. Tầm Nhìn (Brand Vision)</span>
+                  <i data-lucide="eye" class="w-4 h-4 text-emerald-500"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Biểu Tượng Dinh Dưỡng Hạnh Phúc</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Trở thành <strong>Biểu tượng Giá trị Dinh dưỡng Hạnh phúc</strong> mới của Việt Nam, nuôi dưỡng sự TỐT LÀNH trong từng cá nhân và gia đình.
+                </p>
+              </div>
+              <span class="text-[11px] font-mono text-slate-400 mt-4 block">Định hướng dài hạn 2030</span>
+            </div>
+
+            <div class="glow-card p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono font-bold text-blue-600 dark:text-blue-400 uppercase">02. Định Vị (Brand Position)</span>
+                  <i data-lucide="compass" class="w-4 h-4 text-blue-500"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Vị Thế Chuyên Gia Phyto-Nutrients</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Vị thế chuyên gia nghiên cứu ứng dụng <strong>Khoa học Dinh dưỡng Thực vật</strong> vào đời sống, thúc đẩy lối sống cân bằng sinh thái.
+                </p>
+              </div>
+              <span class="text-[11px] font-mono text-slate-400 mt-4 block">World-Class B2C & B2B</span>
+            </div>
+
+            <div class="glow-card p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400 uppercase">03. Sứ Mệnh (Brand Mission)</span>
+                  <i data-lucide="target" class="w-4 h-4 text-indigo-500"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Khai Phát Giới Hạn Chất Lượng</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Không ngừng khai phá chất lượng và giá trị từ đậu nành thiên nhiên nhằm chuẩn hóa tiêu chuẩn <strong>"Tốt Lành, Khỏe Đẹp và Hạnh Phúc"</strong>.
+                </p>
+              </div>
+              <span class="text-[11px] font-mono text-slate-400 mt-4 block">Nuôi dưỡng & Phát triển cuộc sống</span>
+            </div>
+
+            <div class="glow-card p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase">04. Lời Hứa (Brand Promise)</span>
+                  <i data-lucide="shield-check" class="w-4 h-4 text-amber-500"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Cá Nhân Hóa Dinh Dưỡng & Sống Xanh</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  1. Luôn cải tiến và cá nhân hóa dinh dưỡng theo sự thay đổi phong cách sống.<br>
+                  2. Kiến tạo <strong>Cộng đồng Xanh</strong> bền vững hóa xu hướng sống tự nhiên.
+                </p>
+              </div>
+              <span class="text-[11px] font-mono text-slate-400 mt-4 block">Cam kết cộng đồng</span>
+            </div>
+
+            <div class="glow-card p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono font-bold text-purple-600 dark:text-purple-400 uppercase">05. 6 Giá Trị Cốt Lõi</span>
+                  <i data-lucide="cpu" class="w-4 h-4 text-purple-500"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Hệ Giá Trị Chuyển Dịch Mới</h4>
+                <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1 font-mono">
+                  <li>• <strong>Sustainability:</strong> Khoa học & Hệ thống</li>
+                  <li>• <strong>Innovation:</strong> Năng động & Phyto</li>
+                  <li>• <strong>Customer-Centric:</strong> Thấu cảm</li>
+                  <li>• <strong>Connecting:</strong> Đồng thuận giá trị</li>
+                  <li>• <strong>Integrity:</strong> Minh bạch & Đạo đức</li>
+                  <li>• <strong>Vietnamese Spirit:</strong> Di sản Việt</li>
+                </ul>
+              </div>
+              <span class="text-[11px] font-mono text-purple-500 mt-4 block font-semibold">Tái cấu trúc 6 giá trị</span>
+            </div>
+
+            <div class="glow-card p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono font-bold text-rose-600 dark:text-rose-400 uppercase">06. Lợi Thế Độc Quyền (UVPs / RTBs)</span>
+                  <i data-lucide="award" class="w-4 h-4 text-rose-500"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Tài Sản & Năng Lực Cạnh Tranh</h4>
+                <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1">
+                  <li>• <strong>Closed-Loop:</strong> Chuỗi nguyên liệu tuần hoàn</li>
+                  <li>• <strong>VSAC Phyto-Labs:</strong> Phòng lab giống dẫn đầu</li>
+                  <li>• <strong>Digital Multi-Platforms:</strong> Omni & D2C</li>
+                  <li>• <strong>CSR Engagement:</strong> Sữa học đường quốc gia</li>
+                </ul>
+              </div>
+              <span class="text-[11px] font-mono text-rose-500 mt-4 block font-semibold">Lý do tin tưởng cấp chiến lược</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4 Tầng Xu Hướng -->
+        <section class="space-y-8">
+          <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 uppercase">Trụ Cột 02</span>
+                <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mt-1">
+                  Hệ Thống Phân Tích Xu Hướng 4 Tầng & Nguyên Lý Điểm Rơi Thị Trường
+                </h3>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-[11px] font-mono text-slate-600 dark:text-slate-300 font-semibold">
+                Trend Radar 2020–2030
+              </span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono font-bold text-purple-600 uppercase block mb-1">MEGA TRENDS (5–10 Năm)</span>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-2">Nan Đề Văn Minh & Xã Hội</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Creating Shared Value (CSV), kinh tế tuần hoàn, nông nghiệp phát thải thấp và chuyển dịch sang dinh dưỡng xanh.</p>
+              </div>
+              <span class="text-[11px] font-mono text-purple-600 font-semibold">Rổ Must-Wins Dài Hạn</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono font-bold text-indigo-600 uppercase block mb-1">MACRO TRENDS (3–7 Năm)</span>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-2">Địa Chính Trị & Chuỗi Cung Ứng</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Kinh tế số, R&D & Logistics thông minh (E-LGSM), FTAs, CPTPP, RCEP và thuế bảo vệ môi trường.</p>
+              </div>
+              <span class="text-[11px] font-mono text-indigo-600 font-semibold">Rổ Sáng Tạo & Đổi Mới R&D</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono font-bold text-blue-600 uppercase block mb-1">MICRO TRENDS (1–3 Năm)</span>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-2">Bán Lẻ & FMCG Phân Hóa</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Mô hình bán lẻ O2O, Mega-Apps, FinTech và dịch vụ thương mại thuê ngoài (Commercial-as-a-Service).</p>
+              </div>
+              <span class="text-[11px] font-mono text-blue-600 font-semibold">Rổ Khớp Nối Năng Lực</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono font-bold text-emerald-600 uppercase block mb-1">NANO TRENDS (Hàng Năm)</span>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-2">Khẩu Vị & Hành Vi Tiêu Dùng</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Clean Label, Plant-Protein, ăn chay linh hoạt (Flexitarian), Magic Straw và mỹ phẩm đậu nành.</p>
+              </div>
+              <span class="text-[11px] font-mono text-emerald-600 font-semibold">115 Dòng Sản Phẩm Mới</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3 Tầng Phối Hợp CFT & PMO -->
+        <section class="space-y-8">
+          <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 uppercase">Trụ Cột 03</span>
+                <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mt-1">
+                  Hệ Thống Phối Hợp Tác Chiến Liên Phòng Ban (Cross-Functional Collaboration)
+                </h3>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-[11px] font-mono text-slate-600 dark:text-slate-300 font-semibold">
+                3-Tier Matrix & PMO
+              </span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glow-card p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono font-bold text-blue-600 uppercase block mb-1">TIER 1 · CONTENT & VALUE</span>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Chiến Lược & 6P Proposition</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Xác định Source of Customer, thông điệp truyền thông cốt lõi, ma trận giá trị và định vị phân khúc.</p>
+                <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-[11px] font-mono text-blue-500 font-bold">
+                  Marketing · Insights · Brand Managers
+                </div>
+              </div>
+            </div>
+
+            <div class="glow-card p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono font-bold text-emerald-600 uppercase block mb-1">TIER 2 · OPERATIONS PLANNING</span>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Kế Hoạch Năng Lực Kỹ Thuật</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Công thức R&D, thử nghiệm sensory, thu mua nguyên liệu, dây chuyền UHT/Chilled và dự toán tài chính.</p>
+                <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-[11px] font-mono text-emerald-500 font-bold">
+                  R&D · VSAC · Production · Logistics · Tài Chính
+                </div>
+              </div>
+            </div>
+
+            <div class="glow-card p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono font-bold text-purple-600 uppercase block mb-1">TIER 3 · INTEGRATION PLATFORM</span>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Đồng Bộ Sáng Kiến & Lịch Trình</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Đồng bộ nhịp xuất hàng qua Initiative Calendar, kiểm soát 5 cổng lọc Toll-Gates và điều phối thay đổi văn hóa.</p>
+                <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-[11px] font-mono text-purple-500 font-bold">
+                  BQT Mega Project · PMO Core Team
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+          <button onclick="navigateView('home', 'experience')" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 text-white text-xs font-semibold uppercase tracking-wider hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-600/25 transition-all cursor-pointer">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span>Quay Lại Mục Kinh Nghiệm Trên Trang Chủ</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 4: VIETNAM HOME REPORT 2022 INFOGRAPHIC (VHR VIEW) -->
+    <!-- ========================================================================= -->
+    <div id="viewVhr" class="view-content hidden pb-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-16">
+        
+        <!-- Top Toolbar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+          <button onclick="navigateView('home', 'research')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:border-sky-500 hover:text-sky-600 transition-all cursor-pointer">
+            <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+            <span>Về Trang Chủ Portfolio</span>
+          </button>
+
+          <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-600 dark:text-sky-400 font-mono text-xs font-semibold border border-sky-500/20">
+            Báo Cáo Không Gian Sống Tiên Phong Việt Nam (Giai Đoạn 1)
+          </span>
+        </div>
+
+        <!-- Hero VHR with Vector Mockups Gallery -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-xs font-mono font-semibold text-sky-600 dark:text-sky-400">
+              <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+              <span>VIETNAM HOME REPORT 2022 · NATIONAL META-STUDY</span>
+            </div>
+
+            <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.2]">
+              Báo Cáo Xu Hướng Không Gian Sống Đầu Tiên Tại Việt Nam
+            </h2>
+
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
+              Dự án nghiên cứu liên ngành toàn cảnh giải mã <strong>Hành vi Tiêu dùng Gia đình</strong> (Family Patterns), phân tầng <strong>Người tiêu dùng cấp tiến</strong> (Prosumer Cluster) và sự chuyển dịch của <strong>Thế hệ số Việt Nam</strong> trước bối cảnh hậu Covid-19 và tầm nhìn 2030.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs font-mono">
+              <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                <span class="text-slate-400 block text-[11px] mb-0.5">Đơn Vị Chủ Trì</span>
+                <span class="font-bold text-slate-900 dark:text-white">Happynest & Brandmaker</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                <span class="text-slate-400 block text-[11px] mb-0.5">Trưởng Nhóm Phân Tích</span>
+                <span class="font-bold text-sky-600 dark:text-sky-400">Trần Việt Anh (Brain-lab)</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 col-span-2 sm:col-span-1">
+                <span class="text-slate-400 block text-[11px] mb-0.5">Bảo Trợ Truyền Thông</span>
+                <span class="font-bold text-slate-900 dark:text-white">Ashui.com · Tạp Chí Kiến Trúc</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Graphic Gallery (Vector SVGs) -->
+          <div class="lg:col-span-5 grid grid-cols-2 gap-3.5">
+            <div class="relative group rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 bg-slate-900 h-52 sm:h-60 flex flex-col justify-end p-3">
+              <div class="absolute inset-0 bg-gradient-to-br from-sky-900 via-slate-900 to-blue-950 flex items-center justify-center p-4">
+                <svg viewBox="0 0 200 260" class="w-36 h-auto drop-shadow-2xl rounded" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="180" height="250" rx="6" fill="#0284c7"/>
+                  <rect x="8" y="8" width="164" height="234" rx="4" fill="#0f172a"/>
+                  <path d="M45 150V90L75 60V150H45Z" fill="#38bdf8"/>
+                  <rect x="82" y="105" width="16" height="45" fill="#0284c7"/>
+                  <rect x="105" y="85" width="16" height="65" fill="#38bdf8"/>
+                  <rect x="128" y="65" width="16" height="85" fill="#e0f2fe"/>
+                  <text x="35" y="180" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="12">VIETNAM</text>
+                  <text x="35" y="196" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="extrabold" font-size="15">HOME REPORT</text>
+                  <text x="35" y="210" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">2022 · GIAI ĐOẠN 1</text>
+                  <line x1="35" y1="222" x2="150" y2="222" stroke="#38bdf8" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="relative z-10">
+                <span class="inline-block px-2.5 py-1 rounded-lg bg-slate-950/85 backdrop-blur-md text-[11px] font-mono text-white font-semibold border border-white/10">
+                  Tập San Báo Cáo VHR
+                </span>
+              </div>
+            </div>
+
+            <div class="relative group rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 bg-slate-900 h-52 sm:h-60 flex flex-col justify-end p-3">
+              <div class="absolute inset-0 bg-gradient-to-b from-sky-800 to-amber-900/60 overflow-hidden">
+                <svg viewBox="0 0 300 300" class="w-full h-full object-cover" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="300" height="300" fill="#0284c7"/>
+                  <g opacity="0.25" stroke="#ffffff" stroke-width="1.5">
+                    <path d="M30 40c10-20 20-20 30 0M90 40c10-20 20-20 30 0M150 40c10-20 20-20 30 0M210 40c10-20 20-20 30 0M270 40c10-20 20-20 30 0"/>
+                  </g>
+                  <rect y="210" width="300" height="90" fill="#78350f"/>
+                  <line x1="0" y1="235" x2="300" y2="235" stroke="#451a03" stroke-width="2"/>
+                  <ellipse cx="150" cy="245" rx="100" ry="32" fill="#f8fafc" opacity="0.95"/>
+                  <ellipse cx="150" cy="180" rx="55" ry="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+                  <line x1="150" y1="196" x2="150" y2="245" stroke="#94a3b8" stroke-width="6"/>
+                  <rect x="85" y="165" width="28" height="35" rx="6" fill="#eab308"/>
+                  <rect x="187" y="165" width="28" height="35" rx="6" fill="#eab308"/>
+                  <ellipse cx="150" cy="45" rx="42" ry="18" fill="#fef08a" opacity="0.9"/>
+                </svg>
+              </div>
+              <div class="relative z-10">
+                <span class="inline-block px-2.5 py-1 rounded-lg bg-slate-950/85 backdrop-blur-md text-[11px] font-mono text-white font-semibold border border-white/10">
+                  Dining & Color Trend
+                </span>
+              </div>
+            </div>
+
+            <div class="relative group rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 bg-slate-900 h-52 sm:h-60 flex flex-col justify-end p-3">
+              <div class="absolute inset-0 bg-gradient-to-b from-slate-700 to-slate-900 overflow-hidden">
+                <svg viewBox="0 0 300 300" class="w-full h-full object-cover" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="300" height="220" fill="#475569"/>
+                  <rect y="220" width="300" height="80" fill="#78350f"/>
+                  <rect x="45" y="90" width="210" height="70" rx="4" fill="#d97706"/>
+                  <rect x="55" y="130" width="190" height="80" rx="8" fill="#fef3c7"/>
+                  <rect x="75" y="120" width="40" height="25" rx="4" fill="#e0f2fe"/>
+                  <rect x="125" y="120" width="50" height="22" rx="4" fill="#38bdf8"/>
+                  <ellipse cx="150" cy="35" rx="28" ry="18" fill="#f59e0b" opacity="0.95"/>
+                </svg>
+              </div>
+              <div class="relative z-10">
+                <span class="inline-block px-2.5 py-1 rounded-lg bg-slate-950/85 backdrop-blur-md text-[11px] font-mono text-white font-semibold border border-white/10">
+                  Master Bed & Wellness
+                </span>
+              </div>
+            </div>
+
+            <div class="relative group rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 bg-slate-900 h-52 sm:h-60 flex flex-col justify-end p-3">
+              <div class="absolute inset-0 bg-gradient-to-b from-stone-200 to-stone-400 overflow-hidden">
+                <svg viewBox="0 0 300 300" class="w-full h-full object-cover" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="50" y="20" width="200" height="75" fill="#a8a29e"/>
+                  <rect x="20" y="130" width="260" height="90" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+                  <path d="M125 130V105C125 95 140 95 140 105" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+                  <circle cx="56" cy="126" r="6" fill="#dc2626"/>
+                  <circle cx="64" cy="126" r="6" fill="#dc2626"/>
+                  <ellipse cx="180" cy="215" rx="26" ry="10" fill="#9a3412"/>
+                </svg>
+              </div>
+              <div class="relative z-10">
+                <span class="inline-block px-2.5 py-1 rounded-lg bg-slate-950/85 backdrop-blur-md text-[11px] font-mono text-white font-semibold border border-white/10">
+                  Eco Kitchen Fixtures
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics Mixed-Method -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-600 flex items-center justify-center font-bold mb-3 font-mono">
+              <i data-lucide="users" class="w-5 h-5"></i>
+            </div>
+            <div class="font-heading text-3xl font-extrabold text-sky-600 dark:text-sky-400">108 IDIs</div>
+            <p class="text-xs font-bold text-slate-900 dark:text-white mt-1">Phỏng Vấn Chuyên Sâu 1-1</p>
+            <p class="text-[11px] text-slate-500 mt-1">TP.HCM & Hà Nội (72 KOLs & 36 NTD)</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center font-bold mb-3 font-mono">
+              <i data-lucide="camera" class="w-5 h-5"></i>
+            </div>
+            <div class="font-heading text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">10 Tours</div>
+            <p class="text-xs font-bold text-slate-900 dark:text-white mt-1">Home-Tour Ethnography</p>
+            <p class="text-[11px] text-slate-500 mt-1">Quan sát thực địa hành vi tại căn hộ</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-600 flex items-center justify-center font-bold mb-3 font-mono">
+              <i data-lucide="file-text" class="w-5 h-5"></i>
+            </div>
+            <div class="font-heading text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">200+</div>
+            <p class="text-xs font-bold text-slate-900 dark:text-white mt-1">Meta-Analysis Reports</p>
+            <p class="text-[11px] text-slate-500 mt-1">Euromonitor, McKinsey & Học thuật</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold mb-3 font-mono">
+              <i data-lucide="layers" class="w-5 h-5"></i>
+            </div>
+            <div class="font-heading text-3xl font-extrabold text-amber-600 dark:text-amber-400">4 Ngành</div>
+            <p class="text-xs font-bold text-slate-900 dark:text-white mt-1">Hệ Sinh Thái Không Gian</p>
+            <p class="text-[11px] text-slate-500 mt-1">Thiết kế, Nội thất, Vật liệu, Smart Home</p>
+          </div>
+        </div>
+
+        <!-- 3 Cụm Kết Quả: Family, Prosumer, Youth Gens -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3">
+            <span class="text-xs font-mono font-bold text-emerald-600 block">KẾT QUẢ 01 · 11 HÌNH THÁI GIA ĐÌNH</span>
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">Family Patterns & CLV Playbook</h4>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Giải mã quyết định mua sắm phức hợp (High-involvement), phân quyền giữa người khởi xướng (Initiator), ảnh hưởng (Influencer) và duyệt chi (Decider).
+            </p>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3">
+            <span class="text-xs font-mono font-bold text-sky-600 block">KẾT QUẢ 02 · PROSUMER CLUSTER</span>
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">9 Nhóm Người Dùng Cấp Tiến</h4>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Định vị nhóm người dùng không chỉ tiêu dùng thuần túy mà còn là Nhà đồng sáng tạo (Co-creator), sở hữu tri thức trải nghiệm thực tế (Tacit knowledge).
+            </p>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3">
+            <span class="text-xs font-mono font-bold text-indigo-600 block">KẾT QUẢ 03 · DIGITAL GENS 2030</span>
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">33 Triệu Thế Hệ Số Trẻ</h4>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Phân tầng hành vi tìm kiếm giữa Digital Immigrants (Gen X) và Digital Natives (Millennials/Gen Z) qua hiện tượng Parallel Browsing & Page Parking.
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+          <button onclick="navigateView('home', 'research')" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-sky-600 text-white text-xs font-semibold uppercase tracking-wider hover:bg-sky-500 hover:shadow-lg hover:shadow-sky-600/25 transition-all cursor-pointer">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span>Quay Lại Mục Nghiên Cứu Trên Trang Chủ</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 5: AI LEAN PARTNER FMCG AI-FIRST MODEL (AI-LEAN VIEW) -->
+    <!-- ========================================================================= -->
+    <div id="viewAiLean" class="view-content hidden pb-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-16">
+        
+        <!-- Header Controls -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+          <button onclick="navigateView('home', 'experience')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:border-indigo-500 hover:text-indigo-600 transition-all cursor-pointer">
+            <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+            <span>Về Trang Chủ Portfolio</span>
+          </button>
+
+          <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-mono text-xs font-semibold border border-indigo-500/20">
+            AI-First FMCG Business Model Transformation
+          </span>
+        </div>
+
+        <!-- Hero AI Lean Partner -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              <span>STRATEGIC ADVISORY · AI TRANSFORMATION FRAMEWORK</span>
+            </div>
+
+            <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.18]">
+              AI Lean Partner: Tinh Gọn Bộ Máy, Không Ai Bị Bỏ Lại Phía Sau
+            </h2>
+
+            <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl">
+              Mô hình đảo ngược câu chuyện tái cấu trúc ngành hàng tiêu dùng nhanh (FMCG): Biến đội ngũ bán hàng thành <strong>Chủ cửa hàng mang tên mình (Store Owner)</strong> và <strong>Nhà phân phối vi mô (Micro-Distributor)</strong>. Trợ lực bởi nền tảng AI Copilot trên Zalo thay thế phần việc hành chính của bộ máy.
+            </p>
+          </div>
+
+          <div class="lg:col-span-4 p-6 rounded-3xl bg-gradient-to-br from-indigo-600 to-blue-700 text-white shadow-xl space-y-3">
+            <div class="text-xs font-mono uppercase tracking-wider text-indigo-200 font-semibold">Tác Động Cốt Lõi</div>
+            <div class="font-heading text-4xl font-extrabold">16 – 29%</div>
+            <p class="text-xs text-indigo-100 leading-relaxed">
+              Chi phí phục vụ thị trường của doanh nghiệp giảm từ 16% xuống 29%, biến định phí cồng kềnh thành biến phí linh hoạt.
+            </p>
+            <div class="pt-3 border-t border-indigo-400/30 flex items-center justify-between text-[11px] font-mono">
+              <span>Test SP Mới: <strong>3 Tuần</strong> (thay vì 10)</span>
+              <span>Kênh: <strong>Zalo Copilot</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEO PRESENTATION SHOWCASE SECTION (Tích hợp 2 Video với trình phát hiện đại) -->
+        <div class="p-8 sm:p-10 rounded-3xl bg-slate-900 text-white border border-slate-800 shadow-2xl space-y-8">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-400 font-mono text-xs font-semibold mb-2">
+                <i data-lucide="film" class="w-3.5 h-3.5"></i>
+                <span>EXECUTIVE PRESENTATION SHOWCASE</span>
+              </div>
+              <h3 class="font-heading text-xl sm:text-2xl font-bold text-white">
+                Video Thuyết Trình Mô Hình AI Lean Partner
+              </h3>
+            </div>
+
+            <!-- Video Selector Tabs -->
+            <div class="flex items-center p-1 rounded-2xl bg-slate-800 border border-slate-700 text-xs font-semibold">
+              <button onclick="switchVideo(1)" id="btnTabVid1" class="px-4 py-2 rounded-xl bg-indigo-600 text-white transition-all shadow-md flex items-center gap-1.5 cursor-pointer">
+                <i data-lucide="play" class="w-3.5 h-3.5"></i>
+                <span>Video 1: Mô Hình Chi Tiết</span>
+              </button>
+              <button onclick="switchVideo(2)" id="btnTabVid2" class="px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all flex items-center gap-1.5 cursor-pointer">
+                <i data-lucide="play" class="w-3.5 h-3.5"></i>
+                <span>Video 2: Đối Chuẩn Quốc Tế</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <!-- Video Player Window -->
+            <div class="lg:col-span-8 bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl relative">
+              <div id="videoContainer1" class="aspect-video w-full relative">
+                <video id="mainVideo1" controls preload="metadata" class="w-full h-full object-cover">
+                  <source src="Video-AI-Lean-Partner.mp4" type="video/mp4">
+                  Trình duyệt không hỗ trợ thẻ video HTML5.
+                </video>
+              </div>
+
+              <div id="videoContainer2" class="aspect-video w-full relative hidden">
+                <video id="mainVideo2" controls preload="metadata" class="w-full h-full object-cover">
+                  <source src="Video-Mentor-Research-AI-Lean-Partner.mp4" type="video/mp4">
+                  Trình duyệt không hỗ trợ thẻ video HTML5.
+                </video>
+              </div>
+
+              <div class="p-4 bg-slate-950 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-slate-400">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span id="currentVideoTitle" class="text-slate-200 font-semibold">Video 1: Mô Hình Kinh Doanh Mới Cho FMCG - AI Lean Partner</span>
+                </div>
+                <span id="currentVideoDuration" class="text-indigo-400">Thời lượng: 01:20</span>
+              </div>
+            </div>
+
+            <!-- Video Context Sidebar -->
+            <div class="lg:col-span-4 space-y-4">
+              <div id="videoInfo1" class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700 space-y-3">
+                <span class="px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-400 text-[10px] font-mono font-bold uppercase">Video 01</span>
+                <h4 class="font-heading text-base font-bold text-white">Mô Hình Kinh Doanh Cho FMCG</h4>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Phân tích thực trạng 70% kênh bán lẻ qua 1,24 triệu tiệm tạp hóa truyền thống và 4 nỗi đau ngành FMCG. Giải pháp chuyển đổi nhân viên thành chủ cửa hàng có AI trợ lực.
+                </p>
+                <div class="text-xs text-slate-300 space-y-1.5 pt-2 border-t border-slate-700">
+                  <p>• Chi phí phục vụ giảm 16–29%</p>
+                  <p>• Test sản phẩm mới 3 tuần thay vì 10</p>
+                  <p>• Lợi ích ròng 3 năm: 22–79 tỷ đồng / ngành</p>
+                </div>
+              </div>
+
+              <div id="videoInfo2" class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700 space-y-3 hidden">
+                <span class="px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-400 text-[10px] font-mono font-bold uppercase">Video 02</span>
+                <h4 class="font-heading text-base font-bold text-white">Mentor Research & Pháp Lý FedEx</h4>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Kiểm chứng qua 8 tập đoàn quốc tế lớn (Coca-Cola, Amazon, Unilever, Haier...) và bài học cảnh báo 228 triệu USD từ án lệ người lao động trá hình của FedEx.
+                </p>
+                <div class="text-xs text-slate-300 space-y-1.5 pt-2 border-t border-slate-700">
+                  <p>• Coca-Cola: 83–93% doanh số qua vi phân phối</p>
+                  <p>• Amazon: 3.000+ đối tác lao động làm chủ</p>
+                  <p>• FedEx: Cảnh báo pháp lý lao động trá hình</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 Khối Business Model Canvas -->
+        <div class="p-8 rounded-3xl bg-slate-100/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-4">
+            <div>
+              <span class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 uppercase">Khung Chiến Lược Vận Hành</span>
+              <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mt-1">
+                Business Model Canvas: AI Lean Partner (Phiên Bản 2.1)
+              </h3>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-4 text-xs">
+            <div class="md:col-span-3 p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
+              <span class="font-mono font-bold text-indigo-600 block">8. ĐỐI TÁC CHÍNH</span>
+              <ul class="text-slate-600 dark:text-slate-400 space-y-1.5 list-disc list-inside text-[11px] leading-relaxed">
+                <li>Nhân viên cũ thành Store Owner (SO) & MD tự nguyện</li>
+                <li>Đối tác công nghệ: Nền tảng AI 6 lớp, Zalo Mini App</li>
+                <li>Fintech/Ngân hàng: Tài trợ tín dụng 60% vốn lưu động</li>
+                <li>Luật sư độc lập bảo đảm tính pháp lý hộ kinh doanh</li>
+              </ul>
+            </div>
+
+            <div class="md:col-span-3 space-y-3">
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                <span class="font-mono font-bold text-blue-600 block mb-1">7. HOẠT ĐỘNG CHÍNH</span>
+                <p class="text-slate-600 dark:text-slate-400 text-[11px]">Thiết kế cụm, vận hành AI Copilot, R&D Product Test 3 tuần, kiểm soát tỷ lệ hàng công ty ≥ 70%.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                <span class="font-mono font-bold text-sky-600 block mb-1">6. NGUỒN LỰC CHÍNH</span>
+                <p class="text-slate-600 dark:text-slate-400 text-[11px]">Thương hiệu FMCG, dữ liệu bán hàng, quan hệ khách hàng sẵn có của nhân viên tuyến đầu.</p>
+              </div>
+            </div>
+
+            <div class="md:col-span-3 p-5 rounded-2xl bg-indigo-50/80 dark:bg-indigo-950/40 border-2 border-indigo-500/40 space-y-2">
+              <span class="font-mono font-bold text-indigo-700 dark:text-indigo-300 block">2. GIÁ TRỊ ĐỀ XUẤT</span>
+              <div class="space-y-2 text-[11px]">
+                <p>• <strong>Công ty FMCG:</strong> Giảm 16–29% chi phí phục vụ; test SP 3 tuần; tinh gọn không sa thải đồng loạt.</p>
+                <p>• <strong>Store Owner:</strong> Làm chủ tiệm mang tên mình; thu nhập 13–41 tr/tháng (+11–172%).</p>
+                <p>• <strong>MD Cụm kho:</strong> Thu nhập 32–89 tr/tháng; hoàn vốn trong 11–28 tháng.</p>
+              </div>
+            </div>
+
+            <div class="md:col-span-3 space-y-3">
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                <span class="font-mono font-bold text-emerald-600 block mb-1">4. QUAN HỆ KHÁCH HÀNG</span>
+                <p class="text-slate-600 dark:text-slate-400 text-[11px]">AI Copilot 24/7 trên Zalo, AI Coach hàng ngày, bảo lãnh thu nhập 6 tháng.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                <span class="font-mono font-bold text-amber-600 block mb-1">1. PHÂN KHÚC KHÁCH HÀNG</span>
+                <p class="text-slate-600 dark:text-slate-400 text-[11px]">1,24 triệu tạp hóa truyền thống (70% bán lẻ), người tiêu dùng đô thị nhỏ & nông thôn.</p>
+              </div>
+            </div>
+
+            <!-- Cost & Revenue -->
+            <div class="md:col-span-6 p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+              <span class="font-mono font-bold text-rose-600 block mb-1">9. CƠ CẤU CHI PHÍ</span>
+              <p class="text-slate-600 dark:text-slate-400 text-[11px] leading-relaxed">
+                Bộ máy lõi còn 20–40% nhân sự văn phòng; biến phí chiết khấu MD 5–7.5%; nền tảng AI và chi phí chuyển đổi thí điểm ban đầu.
+              </p>
+            </div>
+
+            <div class="md:col-span-6 p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+              <span class="font-mono font-bold text-emerald-600 block mb-1">5. DÒNG DOANH THU & HIỆU QUẢ</span>
+              <p class="text-slate-600 dark:text-slate-400 text-[11px] leading-relaxed">
+                Lợi ích ròng thận trọng 3 năm: 22–79 tỷ đồng / ngành; giảm tỷ lệ SP mới thất bại từ 70% xuống 55%.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+          <button onclick="navigateView('home', 'experience')" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-indigo-600 text-white text-xs font-semibold uppercase tracking-wider hover:bg-indigo-500 hover:shadow-lg hover:shadow-indigo-600/25 transition-all cursor-pointer">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span>Quay Lại Mục Kinh Nghiệm Trên Trang Chủ</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 6: BÁO CÁO NGHIÊN CỨU THỊ TRƯỜNG (RESEARCH REPORTS VIEW) -->
+    <!-- ========================================================================= -->
+    <div id="viewReports" class="view-content hidden pb-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-8">
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+          <button onclick="navigateView('home', 'experience')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:border-blue-500 hover:text-blue-600 transition-all cursor-pointer">
+            <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+            <span data-i18n="navBackHome">Quay Lại Mục Kinh Nghiệm</span>
+          </button>
+
+          <div class="flex items-center p-1 rounded-xl bg-slate-200/80 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-semibold">
+            <button onclick="switchReportTab('vn')" id="tabBtnVN" class="px-3.5 py-1.5 rounded-lg bg-blue-600 text-white transition-all shadow-sm cursor-pointer">
+              Báo Cáo Việt Nam
+            </button>
+            <button onclick="switchReportTab('asean')" id="tabBtnAsean" class="px-3.5 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-all cursor-pointer">
+              Báo Cáo ASEAN
+            </button>
+          </div>
+        </div>
+
+        <!-- REPORT 1: VIETNAM -->
+        <div id="reportVN" class="space-y-10">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 mb-4">
+              <i data-lucide="bar-chart-2" class="w-3.5 h-3.5"></i>
+              <span>MARKET SCREENING STUDY #01</span>
+            </div>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-3" data-i18n="vnReportTitle">
+              Nghiên Cứu Sàng Lọc Thị Trường Sản Xuất & Public Cloud Việt Nam
+            </h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed" data-i18n="vnReportDesc">
+              Báo cáo phân tích cấu trúc thị trường sản xuất cơ khí, đám mây công cộng (Public Cloud SaaS/BPaaS) và mô hình sàng lọc cơ hội tăng trưởng cho CADDi Drawer tại Việt Nam.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <span class="text-xs font-mono text-slate-400 block mb-1">Thị Trường Sản Xuất VN</span>
+              <div class="font-heading text-2xl font-extrabold text-blue-600 dark:text-blue-400">$729.8B</div>
+              <p class="text-[11px] text-slate-500 mt-1">Dự báo 2024f (CAGR: 16.25%)</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <span class="text-xs font-mono text-slate-400 block mb-1">Public Cloud Market</span>
+              <div class="font-heading text-2xl font-extrabold text-emerald-600 dark:text-emerald-400">$847.9M</div>
+              <p class="text-[11px] text-slate-500 mt-1">Chi tiêu TB: $14.32 / nhân sự</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <span class="text-xs font-mono text-slate-400 block mb-1">Máy Móc & Thiết Bị (ISIC 28)</span>
+              <div class="font-heading text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">$1.23B</div>
+              <p class="text-[11px] text-slate-500 mt-1">3.230 Doanh nghiệp · 118k thợ</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <span class="text-xs font-mono text-slate-400 block mb-1">Sửa Chữa & Lắp Đặt (ISIC 33)</span>
+              <div class="font-heading text-2xl font-extrabold text-sky-600 dark:text-sky-400">$0.79B</div>
+              <p class="text-[11px] text-slate-500 mt-1">12.180 Doanh nghiệp mục tiêu</p>
+            </div>
+          </div>
+
+          <!-- Strategy-Led Growth Model -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg">
+            <div class="mb-6">
+              <span class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 uppercase">Mô hình chiến lược độc quyền</span>
+              <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white mt-1">
+                Khung Hoạch Định Tăng Trưởng 4 Trục (Strategy-Led Growth Model)
+              </h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-5 rounded-2xl bg-amber-500/5 border border-amber-500/20">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase">Sale-led & Relationship-led</span>
+                  <span class="text-xs font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 font-bold">$975,000 / Năm</span>
+                </div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Partnership Shame-less MVP</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Khai thác mạng lưới quan hệ C-suite, liên minh ngành và giải ngân ngân sách R&D tĩnh (2% ngân sách hàng năm) từ các khách hàng lớn.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-blue-500/5 border border-blue-500/20">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-xs font-mono font-bold text-blue-600 dark:text-blue-400 uppercase">Sale-led & Marketing-led</span>
+                  <span class="text-xs font-mono px-2 py-0.5 rounded bg-blue-500/20 text-blue-700 dark:text-blue-300 font-bold">$806,400 / Năm</span>
+                </div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Market-Share Focus Strategy</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Đầu tư mạnh vào truyền thông thương hiệu tổng thể (Thematic campaigns), tài trợ triển lãm công nghệ để chiếm lĩnh thị phần.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REPORT 2: ASEAN -->
+        <div id="reportAsean" class="hidden space-y-10">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 mb-4">
+              <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+              <span>MARKET EXPANSION STUDY #02</span>
+            </div>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-3" data-i18n="aseanReportTitle">
+              Nghiên Cứu Mở Rộng Thị Trường Sản Xuất ASEAN (Singapore & Malaysia)
+            </h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed" data-i18n="aseanReportDesc">
+              Khảo sát văn hóa Hofstede, phân tích PESTLE và cơ cấu ngành phần mềm B2B để thiết lập lộ trình Go-To-Market cho CADDi Drawer tại Singapore và Malaysia.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono text-blue-500 font-semibold block mb-2">Thị Trường Singapore</span>
+                <h4 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2">Đầu Tàu Công Nghệ & R&D</h4>
+                <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-2 list-disc list-inside">
+                  <li>Lương sản xuất TB: <strong>$4,735 / tháng</strong></li>
+                  <li>Chỉ số Đổi mới sáng tạo GII: <strong>57.3</strong></li>
+                </ul>
+              </div>
+              <span class="text-[11px] font-mono text-blue-500 mt-4 block font-bold">Định vị: ROI & Tự động hóa bản vẽ</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono text-emerald-500 font-semibold block mb-2">Thị Trường Malaysia</span>
+                <h4 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2">Trung Tâm Cơ Khí Chế Tạo</h4>
+                <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-2 list-disc list-inside">
+                  <li>Khoảng cách quyền lực (Power Distance = 100).</li>
+                  <li>Ra quyết định theo nhóm & bảo chứng hiệp hội.</li>
+                </ul>
+              </div>
+              <span class="text-[11px] font-mono text-emerald-500 mt-4 block font-bold">Định vị: Liên minh hiệp hội</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono text-indigo-500 font-semibold block mb-2">Phần Mềm B2B ASEAN</span>
+                <h4 class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-2">$5.21B Quy Mô (2024f)</h4>
+                <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-2 list-disc list-inside">
+                  <li>Enterprise Software: <strong>$2.18B</strong></li>
+                  <li>CAD/CAM Aveva chiếm 45% thị phần.</li>
+                </ul>
+              </div>
+              <span class="text-[11px] font-mono text-indigo-500 mt-4 block font-bold">Phân khúc: Design & EPM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+          <button onclick="navigateView('home', 'experience')" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-blue-600 text-white text-xs font-semibold uppercase tracking-wider hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-600/25 transition-all cursor-pointer">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span>Quay Lại Mục Kinh Nghiệm Trên Trang Chủ</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= CADDi LEAD GENERATION INTERACTIVE MODAL ================= -->
+  <div id="caseStudyModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md overflow-y-auto">
+    <div class="min-h-screen px-4 py-8 flex items-center justify-center">
+      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 w-full max-w-5xl rounded-3xl shadow-2xl overflow-hidden relative">
+        
+        <div class="sticky top-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md px-6 sm:px-8 py-5 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between z-10">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs font-mono font-semibold">
+              <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+              CADDi Drawer AI SaaS
+            </span>
+            <h3 class="font-heading text-lg sm:text-xl font-bold text-slate-900 dark:text-white mt-1">
+              Mô Hình Vận Hành Tạo Lead Toàn Phễu (Full-Funnel Lead Engine)
+            </h3>
+          </div>
+
+          <button onclick="closeCaseStudyModal()" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all cursor-pointer">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <div class="p-6 sm:p-8 space-y-8">
+          <div class="space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <h4 class="font-heading text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <i data-lucide="git-merge" class="w-4 h-4 text-blue-500"></i>
+                <span>Sơ Đồ Kiến Trúc Quy Trình Vận Hành (Master Architecture Blueprint)</span>
+              </h4>
+              
+              <div class="flex items-center gap-2">
+                <label for="localImgInput" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold cursor-pointer transition-all border border-slate-300 dark:border-slate-700">
+                  <i data-lucide="upload" class="w-3.5 h-3.5"></i>
+                  <span>Chọn Tệp Ảnh Từ Máy</span>
+                </label>
+                <input type="file" id="localImgInput" accept="image/*" class="hidden" onchange="previewUserImage(event)" />
+              </div>
+            </div>
+
+            <!-- Interactive Blueprint Fallback Diagram -->
+            <div class="rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden bg-slate-950 p-4 text-center min-h-[280px] flex flex-col items-center justify-center relative">
+              <img 
+                id="caseStudyImg"
+                src="CADDi_Lead_Generation_Model-Lead_generation_model.drawio_2.jpg" 
+                alt="CADDi Lead Generation Operation Model" 
+                class="w-full h-auto max-h-[550px] object-contain rounded-xl mx-auto block"
+                onerror="handleImgFallback(this)"
+              />
+
+              <div id="imgFallbackNotice" class="hidden p-6 w-full max-w-3xl bg-slate-900 border border-slate-800 rounded-xl my-4 text-center">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mx-auto mb-3">
+                  <i data-lucide="git-branch" class="w-6 h-6"></i>
+                </div>
+                <h5 class="text-sm font-bold text-white mb-1">Mô Hình Dòng Dữ Liệu Lead Phễu Tự Động (Architectural Schema)</h5>
+                <p class="text-xs text-slate-400 mb-4">Sơ đồ 5 tầng chuyển đổi được hệ thống hóa:</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-5 gap-2 text-[11px] text-left">
+                  <div class="p-2.5 rounded-lg bg-slate-800 border border-slate-700">
+                    <span class="text-blue-400 font-bold block mb-1">1. SUSPECT (SCL)</span>
+                    <p class="text-slate-400">Data crawl hiệp hội VASI, HAMEE & hội chợ.</p>
+                  </div>
+                  <div class="p-2.5 rounded-lg bg-slate-800 border border-slate-700">
+                    <span class="text-emerald-400 font-bold block mb-1">2. ACTIVE (AIL)</span>
+                    <p class="text-slate-400">Tương tác qua hội thảo, tải whitepaper.</p>
+                  </div>
+                  <div class="p-2.5 rounded-lg bg-slate-800 border border-slate-700">
+                    <span class="text-indigo-400 font-bold block mb-1">3. MQL</span>
+                    <p class="text-slate-400">Marketing chấm điểm dữ liệu tiêu chuẩn.</p>
+                  </div>
+                  <div class="p-2.5 rounded-lg bg-slate-800 border border-slate-700">
+                    <span class="text-amber-400 font-bold block mb-1">4. SQL / SAL</span>
+                    <p class="text-slate-400">SDR thẩm định số lượng bản vẽ & người duyệt.</p>
+                  </div>
+                  <div class="p-2.5 rounded-lg bg-slate-800 border border-slate-700">
+                    <span class="text-purple-400 font-bold block mb-1">5. WON DEAL</span>
+                    <p class="text-slate-400">AE Demo phần mềm & chốt hợp đồng.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 dark:bg-slate-950 px-6 sm:px-8 py-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-500 dark:text-slate-400">Project: CADDi Drawer SaaS Commercialization</span>
+          <button onclick="closeCaseStudyModal()" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all cursor-pointer">
+            Đóng Hộp Thoại
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="relative border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 pt-16 pb-12 px-6 transition-colors overflow-hidden">
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-200 dark:border-slate-800/80">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-blue-600 dark:bg-blue-500"></span>
+            <span class="font-heading text-xl font-bold tracking-tight text-slate-900 dark:text-white">TRAN VIET ANH</span>
+          </div>
+          <p class="text-sm font-medium text-blue-600 dark:text-blue-400 font-mono" data-i18n="footerRole">
+            Strategic Consulting Director | Researcher & Value Orchestrator
+          </p>
+          <p class="text-xs text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed" data-i18n="footerBio">
+            Đồng hành cùng ban lãnh đạo doanh nghiệp trong chẩn đoán sức khỏe tổ chức, kiến tạo chiến lược tăng trưởng bền vững và chuẩn hóa hệ thống thương mại đa kênh.
+          </p>
+        </div>
+
+        <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="mailto:vianhtran25@gmail.com" class="glow-card group p-4 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500 flex flex-col justify-between shadow-sm">
+            <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="text-[11px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1" data-i18n="footerEmailLabel">Thư điện tử</p>
+              <p class="text-xs font-semibold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors break-all">
+                vianhtran25@gmail.com
+              </p>
+            </div>
+          </a>
+
+          <a href="tel:0903096255" class="glow-card group p-4 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 flex flex-col justify-between shadow-sm">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="text-[11px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1" data-i18n="footerPhoneLabel">Điện thoại</p>
+              <p class="text-xs font-semibold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                (+84) 903.096.255
+              </p>
+            </div>
+          </a>
+
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm">
+            <div class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center mb-3">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="text-[11px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1" data-i18n="footerAddressLabel">Địa chỉ</p>
+              <p class="text-xs font-semibold text-slate-800 dark:text-slate-300 leading-snug" data-i18n="footerAddressVal">
+                Phú Nhuận, TP. Hồ Chí Minh
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500 dark:text-slate-400">
+        <p class="text-center sm:text-left">
+          © 2026 Tran Viet Anh. All Rights Reserved.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+          <button onclick="navigateView('home', 'top')" class="hover:text-blue-500 cursor-pointer">Trang Chủ</button>
+          <button onclick="navigateView('vinasoy', 'top')" class="hover:text-emerald-500 cursor-pointer">Vinasoy 10 Mega Projects</button>
+          <button onclick="navigateView('vinasoy-arch', 'top')" class="hover:text-emerald-500 cursor-pointer">Vinasoy CFT</button>
+          <button onclick="navigateView('vhr', 'top')" class="hover:text-sky-500 cursor-pointer">VHR 2022</button>
+          <button onclick="navigateView('ai-lean', 'top')" class="hover:text-indigo-500 cursor-pointer">AI Lean Partner</button>
+          <button onclick="navigateView('reports', 'top')" class="hover:text-blue-500 cursor-pointer">Báo Cáo</button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= JAVASCRIPT LOGIC ENGINE ================= -->
+  <script>
+    // Bilingual Dictionary
+    const siteI18n = {
+      en: {
+        headerStatus: "Open for Strategic Advisory",
+        navHome: "Home Profile",
+        navReports: "Screening Reports",
+        navContact: "Get in Touch",
+        navBackHome: "Back to Experience",
+        heroBadge: "LATERAL THINKER · DISRUPTIVE RESEARCHER · VALUE-ORCHESTRATOR",
+        heroTitle: "Architecting Enterprise Growth & Market Trajectories.",
+        heroDesc: "Strategic Consulting Director at Brandmaker. Specializing in enterprise turnaround, market penetration roadmaps, and synthesizing complex market intelligence into revenue-generating business models.",
+        btnExp: "Explore Experience",
+        compSub: "Capabilities Matrix",
+        compTitle: "Core Competencies & Tooling",
+        p1Title: "Strategy & Scale Growth",
+        p1Desc: "Enterprise business diagnosis, 10-5-3 OGSM frameworks, SBSC architecture, and corporate innovation roadmaps.",
+        p2Title: "Commercial Operations",
+        p2Desc: "Full-funnel Go-To-Market execution, Inside-Sales system modeling, and B2B strategic ecosystem cultivation.",
+        p3Title: "Data Intelligence & BI",
+        p3Desc: "End-to-end data pipeline modeling, BI dashboards, consumer space segmentation, and meta-trend research.",
+        p4Title: "AI & Workflow Automations",
+        p4Desc: "Operationalizing AI workflows, synthesis systems with LLMs, and multi-platform no-code pipeline automation.",
+        expSub: "Career Trajectory",
+        expTitle: "Professional Leadership",
+        e1Time: "Feb 2026 — Present",
+        e1Tag: "Executive Consulting",
+        e1Role: "Strategic Consulting Director",
+        e1Point1: "Directing multi-pillar enterprise transformations across Strategy & Growth, Marketing Management, Corporate Comms, and B2B Commercial Systems.",
+        e1Point2: "Executing corporate core diagnoses, C-suite alignment, and restructuring enterprise architectures for shifting economic cycles.",
+        e2Time: "2023 — Feb 2026",
+        e2Tag: "Manufacturing AI / SaaS",
+        e2BtnCaseStudy: "View Lead Engine Blueprint",
+        e2BtnReports: "VN & ASEAN Screening Reports",
+        e2Role: "Senior Brand & Business Development Manager",
+        e2Point1: "Led market penetration and GTM feasibility studies for CADDi Drawer across Vietnam, Singapore, and Malaysia.",
+        e2Point2: "Engineered the Brand Marketing & Inside-Sales operations framework from the ground up for software commercialization.",
+        e2Point3: "Built strategic alliances with premier industry bodies (VASI, HAMEE) and government agencies to accelerate pipeline trust.",
+        e3Tag: "Management Consulting & Restructuring",
+        e3Role: "Head of Strategic Consulting",
+        e3Point1: "FPT Corporation: Corporate brand repositioning and core brand diagnosis (2018–2020).",
+        e3Point2: "Vinasoy Corporation: Engineered 10 Mega Projects architecture, 2019–2030 strategic growth roadmap, 10-5-3 OGSM, and multi-tier Playbook governance.",
+        e3Point3: "West Food & Flexit: Delivered corporate innovation pipelines, business opportunity roadmaps, and remodeling.",
+        e4Tag: "Tech Unicorn Startup",
+        e4Role: "Senior Business Development Manager",
+        e4Point1: "Conceptualized and launched the commercial operation model for Paktor Prime in Vietnam.",
+        e4Point2: "Built cross-functional teams, scalable affiliate networks, and B2B partner ecosystems.",
+        e5Tag: "Market Research Track",
+        e5Role: "Associate Research Manager & Exec",
+        e5Point1: "Pioneered localized research frameworks (Censydiam, Demand-Space) during FMCG's benchmark-setting era.",
+        e5Point2: "Directly managed multinational corporate research accounts: Toyota / Lexus, Mundipharma, Roche, and HSBC.",
+        certSub: "Verified Credentials",
+        certTitle: "Data Intelligence & AI Mastery",
+        c1Title: "Google Business Intelligence Professional Certificate",
+        c1Desc: "End-to-end credential covering business intelligence processes, data modeling, ETL pipeline architecture, and executive dashboard design using BigQuery, SQL, and Tableau.",
+        c2Title: "The Path to Insights: Data Models and Pipelines",
+        c2Desc: "Specialized mastery in architecting robust data models, schemas, and automated data pipelines to feed real-time analytics engines and business intelligence systems.",
+        c3Title: "Google Data Analytics Professional Certificate",
+        c3Desc: "Comprehensive 8-course credential demonstrating proficiency in data preparation, cleaning, exploratory data analysis, and visualization using spreadsheets, SQL, Tableau, and R.",
+        c4Title: "Google AI Essentials",
+        c4Desc: "Verified credential covering foundational AI concepts, prompt engineering, and the strategic integration of generative AI tools to augment organizational workflows.",
+        certLink: "Verify Credential",
+        footerRole: "Strategic Consulting Director | Researcher & Value Orchestrator",
+        footerBio: "Partnering with executive leadership to conduct core business diagnosis, engineer sustainable growth frameworks, and optimize B2B commercial ecosystems.",
+        footerEmailLabel: "Email Address",
+        footerPhoneLabel: "Phone Number",
+        footerAddressLabel: "Location",
+        footerAddressVal: "Phu Nhuan District, Ho Chi Minh City",
+        vnReportTitle: "Vietnam Manufacturing & Public Cloud Screening Study",
+        vnReportDesc: "In-depth market structure analysis of industrial engineering, public cloud (SaaS/BPaaS), and opportunity prioritization models for CADDi Drawer in Vietnam.",
+        aseanReportTitle: "ASEAN Manufacturing Market Expansion Study (Singapore & Malaysia)",
+        aseanReportDesc: "Hofstede 6D cultural analysis, PESTLE assessment, and B2B software architectures informing Go-To-Market expansion into Singapore and Malaysia.",
+        vnsTitle: "Vinasoy Mega Projects: Enterprise Architecture & Innovation Governance",
+        vnsDesc: "A comprehensive transformation program led by Brandmaker for Vinasoy (QNS), integrating 10 Mega Projects from R&D governance, product innovation tollgates, multi-tier channel playbooks to cultural change management."
+      },
+      vi: {
+        headerStatus: "Tư vấn Chiến lược & Tăng trưởng",
+        navHome: "Trang Chủ",
+        navReports: "Báo Cáo Nghiên Cứu",
+        navContact: "Kết nối",
+        navBackHome: "Quay Lại Mục Kinh Nghiệm",
+        heroBadge: "TƯ DUY ĐA CHIỀU · NGHIÊN CỨU ĐỘT PHÁ · ĐIỀU PHỐI GIÁ TRỊ TĂNG TRƯỞNG",
+        heroTitle: "Kiến Tạo Tăng Trưởng Doanh Nghiệp & Định Hình Quỹ Đạo Thị Trường.",
+        heroDesc: "Giám đốc Tư vấn Chiến lược tại Brandmaker. Chuyên sâu về tái cấu trúc doanh nghiệp, thiết kế lộ trình thâm nhập thị trường (GTM) và chuyển hóa dữ liệu thị trường phức hợp thành các mô hình kinh doanh tạo dòng tiền bền vững.",
+        btnExp: "Xem Hành Trình Nghề Nghiệp",
+        compSub: "Khung Năng Lực Cốt Lõi",
+        compTitle: "Năng Lực Chuyên Môn & Hệ Thống Công Cụ",
+        p1Title: "Chiến Lược & Tăng Trưởng Quy Mô",
+        p1Desc: "Chẩn đoán sức khỏe doanh nghiệp, hoạch định mô hình OGSM 10-5-3 năm, thiết lập hệ thống thẻ điểm cân bằng (SBSC) và lộ trình đổi mới sáng tạo nội bộ.",
+        p2Title: "Hệ Thống Vận Hành Thương Mại",
+        p2Desc: "Thực thi chiến lược Go-To-Market toàn phễu, xây dựng hệ thống Inside-Sales và thiết lập mạng lưới đối tác chiến lược B2B sâu rộng.",
+        p3Title: "Dữ Liệu Thông Minh & Phân Tích",
+        p3Desc: "Mô hình hóa đường ống dữ liệu (data pipeline), thiết kế dashboard BI điều hành, phân khúc không gian nhu cầu (Demand-Space) và dự báo xu hướng tiêu dùng vĩ mô.",
+        p4Title: "Trí Tuệ Nhân Tạo & Tự Động Hóa",
+        p4Desc: "Chuẩn hóa quy trình vận hành với Generative AI, xây dựng hệ thống tổng hợp tri thức qua LLM và tự động hóa quy trình no-code đa nền tảng.",
+        expSub: "Quỹ Đạo Sự Nghiệp",
+        expTitle: "Dấu Ấn Điều Hành & Tư Vấn Chiến Lược",
+        e1Time: "02/2026 — Hiện tại",
+        e1Tag: "Tư Vấn Quản Trị Cấp Cao",
+        e1Role: "Giám Đốc Tư Vấn Chiến Lược",
+        e1Point1: "Chủ trì các chương trình chuyển đổi doanh nghiệp toàn diện trên 4 trụ cột: Chiến lược Tăng trưởng, Quản trị Tiếp thị, Truyền thông Doanh nghiệp và Hệ sinh thái Thương mại B2B.",
+        e1Point2: "Thực hiện chẩn đoán năng lực lõi, điều phối sự đồng thuận cấp C-suite và tái thiết kế kiến trúc doanh nghiệp nhằm thích ứng với chu kỳ kinh tế mới.",
+        e2Time: "2023 — 02/2026",
+        e2Tag: "SaaS & AI Công Nghiệp Sản Xuất",
+        e2BtnCaseStudy: "Xem Sơ Đồ Lead Engine",
+        e2BtnReports: "Báo Cáo Nghiên Cứu VN & ASEAN",
+        e2Role: "Quản Lý Cấp Cao Phát Triển Thương Hiệu & Kinh Doanh",
+        e2Point1: "Chủ trì nghiên cứu tiền khả thi và thiết lập lộ trình Go-To-Market đưa nền tảng CADDi Drawer thâm nhập thị trường Việt Nam, Singapore và Malaysia.",
+        e2Point2: "Thiết kế và chuẩn hóa từ đầu hệ sinh thái vận hành Tiếp thị Thương hiệu & Inside-Sales nhằm thương mại hóa giải pháp phần mềm AI.",
+        e2Point3: "Kiến tạo liên minh chiến lược với các hiệp hội công nghiệp chủ lực (VASI, HAMEE) và các cơ quan xúc tiến thương mại, củng cố mức độ tin cậy của giải pháp.",
+        e3Tag: "Tư Vấn Quản Trị & Tái Cấu Trúc",
+        e3Role: "Trưởng Bộ Phận Tư Vấn Chiến Lược",
+        e3Point1: "<strong>Tập đoàn FPT:</strong> Chủ trì chẩn đoán bản sắc lõi và tái định vị thương hiệu tập đoàn (2018–2020).",
+        e3Point2: "<strong>Vinasoy Corporation:</strong> Khởi tạo và thiết kế kiến trúc hệ thống 10 Mega Projects, lộ trình tăng trưởng 2019–2030, OGSM 10-5-3 năm và khung quản trị tri thức Playbook đa tầng.",
+        e3Point3: "<strong>West Food & Flexit:</strong> Thực hiện chẩn đoán mô hình kinh doanh, phát triển danh mục cơ hội tăng trưởng mới và tái thiết kế cấu trúc thương hiệu.",
+        e4Tag: "Kỳ Lân Công Nghệ Khu Vực",
+        e4Role: "Giám Đốc Phát Triển Kinh Doanh Cấp Cao",
+        e4Point1: "Khởi tạo, ra mắt và tối ưu hóa mô hình vận hành thương mại cho dịch vụ Paktor Prime tại thị trường Việt Nam.",
+        e4Point2: "Tuyển dụng, cơ cấu và dẫn dắt đội ngũ đa chức năng; kiến tạo mạng lưới tiếp thị liên kết (affiliate) và quan hệ đối tác quy mô lớn.",
+        e5Tag: "Nghiên Cứu Thị Trường Chuyên Nghiệp",
+        e5Role: "Phó Giám Đốc Nghiên Cứu & Chuyên Viên Nghiên Cứu Định Tính",
+        e5Point1: "Tiên phong chuyển giao và nội địa hóa các mô hình nghiên cứu chuẩn quốc tế (Censydiam, Demand-Space) trong giai đoạn định hình các chuẩn mực ngành FMCG Việt Nam.",
+        e5Point2: "Trực tiếp quản lý và thực hiện các dự án tình báo thị trường chuyên sâu cho các khách hàng đa quốc gia: Toyota / Lexus, Mundipharma, Roche, và HSBC.",
+        certSub: "Hệ Thống Văn Bằng Chuyên Nghiệp",
+        certTitle: "Năng Lực Phân Tích Dữ Liệu & Ứng Dụng AI",
+        c1Title: "Chứng Chỉ Chuyên Nghiệp Google Business Intelligence",
+        c1Desc: "Xác nhận năng lực toàn diện về quy trình BI, mô hình hóa dữ liệu nâng cao, kiến trúc đường ống trích xuất ETL và thiết kế bảng điều khiển trực quan hóa (dashboard) cho cấp lãnh đạo qua BigQuery, SQL và Tableau.",
+        c2Title: "The Path to Insights: Data Models and Pipelines (Google)",
+        c2Desc: "Năng lực chuyên sâu về thiết kế lược đồ (schema), cấu trúc mô hình dữ liệu quan hệ và tự động hóa quy trình nạp dữ liệu liên tục phục vụ hệ thống phân tích thời gian thực.",
+        c3Title: "Chứng Chỉ Chuyên Nghiệp Google Data Analytics",
+        c3Desc: "Hệ thống 8 khóa đào tạo chuẩn quốc tế chứng minh năng lực thu thập, làm sạch, phân tích khám phá dữ liệu (EDA) và trực quan hóa chuyên sâu thông qua SQL, Tableau và ngôn ngữ R.",
+        c4Title: "Google AI Essentials",
+        c4Desc: "Chứng chỉ kỹ thuật số xác nhận năng lực cốt lõi về trí tuệ nhân tạo tạo sinh (GenAI), kỹ nghệ ra lệnh (Prompt Engineering) và phương pháp tích hợp AI vào quy trình nâng cao hiệu suất doanh nghiệp.",
+        certLink: "Xác Thực Chứng Chỉ Số",
+        footerRole: "Giám Đốc Tư Vấn Chiến Lược | Nhà Nghiên Cứu & Điều Phối Giá Trị",
+        footerBio: "Đồng hành cùng ban lãnh đạo doanh nghiệp trong chẩn đoán sức khỏe tổ chức, kiến tạo chiến lược tăng trưởng bền vững và chuẩn hóa hệ thống thương mại đa kênh.",
+        footerEmailLabel: "Thư điện tử",
+        footerPhoneLabel: "Điện thoại",
+        footerAddressLabel: "Địa chỉ",
+        footerAddressVal: "Phú Nhuận, TP. Hồ Chí Minh",
+        vnReportTitle: "Nghiên Cứu Sàng Lọc Thị Trường Sản Xuất & Public Cloud Việt Nam",
+        vnReportDesc: "Báo cáo phân tích cấu trúc thị trường sản xuất cơ khí, đám mây công cộng (Public Cloud SaaS/BPaaS) và mô hình sàng lọc cơ hội tăng trưởng cho CADDi Drawer tại Việt Nam.",
+        aseanReportTitle: "Nghiên Cứu Mở Rộng Thị Trường Sản Xuất ASEAN (Singapore & Malaysia)",
+        aseanReportDesc: "Khảo sát văn hóa Hofstede, phân tích PESTLE và cơ cấu ngành phần mềm B2B để thiết lập lộ trình Go-To-Market cho CADDi Drawer tại Singapore và Malaysia.",
+        vnsTitle: "Vinasoy Mega Projects: Tái Thiết Kế Kiến Trúc Doanh Nghiệp & Hệ Thống Đổi Mới Sáng Tạo",
+        vnsDesc: "Chương trình tư vấn chuyển đổi toàn diện do Brandmaker dẫn dắt cho Vinasoy (QNS), thiết kế khung tích hợp 10 Mega Projects đồng bộ từ nghiên cứu R&D, kiểm soát cổng lọc sản phẩm mới, xây dựng kho tri thức Playbook đa kênh đến quản trị thay đổi văn hóa tổ chức."
+      }
+    };
+
+    // SPA Single-Page Router
+    function navigateView(viewName, targetScroll) {
+      const vHome = document.getElementById('viewHome');
+      const vVinasoy = document.getElementById('viewVinasoy');
+      const vVinasoyArch = document.getElementById('viewVinasoyArch');
+      const vVhr = document.getElementById('viewVhr');
+      const vAiLean = document.getElementById('viewAiLean');
+      const vReports = document.getElementById('viewReports');
+
+      const navHome = document.getElementById('navLinkHome');
+      const navVinasoyGroup = document.getElementById('navLinkVinasoyGroup');
+      const navVhr = document.getElementById('navLinkVhr');
+      const navAiLean = document.getElementById('navLinkAiLean');
+      const navReports = document.getElementById('navLinkReports');
+      const topBar = document.getElementById('topGradientBar');
+      const dot = document.getElementById('brandPulseDot');
+
+      // Hide all
+      vHome.classList.add('hidden');
+      vVinasoy.classList.add('hidden');
+      vVinasoyArch.classList.add('hidden');
+      vVhr.classList.add('hidden');
+      vAiLean.classList.add('hidden');
+      vReports.classList.add('hidden');
+
+      // Reset nav classes
+      navHome.className = "px-3 py-1.5 rounded-xl text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-all cursor-pointer";
+      navVinasoyGroup.className = "inline-flex items-center gap-1 px-3 py-1.5 rounded-xl hover:text-emerald-600 transition-all cursor-pointer";
+      navVhr.className = "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl hover:text-sky-600 transition-all cursor-pointer";
+      navAiLean.className = "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl hover:text-indigo-600 transition-all cursor-pointer";
+      navReports.className = "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl hover:text-blue-600 transition-all cursor-pointer";
+
+      // View selector
+      if (viewName === 'vinasoy') {
+        vVinasoy.classList.remove('hidden');
+        navVinasoyGroup.className = "inline-flex items-center gap-1 px-3 py-1.5 rounded-xl text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 font-bold transition-all cursor-pointer";
+        topBar.className = "h-1 w-full bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 transition-all duration-500";
+        dot.className = "w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0";
+      } else if (viewName === 'vinasoy-arch') {
+        vVinasoyArch.classList.remove('hidden');
+        navVinasoyGroup.className = "inline-flex items-center gap-1 px-3 py-1.5 rounded-xl text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 font-bold transition-all cursor-pointer";
+        topBar.className = "h-1 w-full bg-gradient-to-r from-teal-500 via-emerald-600 to-amber-500 transition-all duration-500";
+        dot.className = "w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0";
+      } else if (viewName === 'vhr') {
+        vVhr.classList.remove('hidden');
+        navVhr.className = "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-sky-950/50 font-bold transition-all cursor-pointer";
+        topBar.className = "h-1 w-full bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 transition-all duration-500";
+        dot.className = "w-2.5 h-2.5 rounded-full bg-sky-500 animate-pulse shrink-0";
+      } else if (viewName === 'ai-lean') {
+        vAiLean.classList.remove('hidden');
+        navAiLean.className = "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50 font-bold transition-all cursor-pointer";
+        topBar.className = "h-1 w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-amber-500 transition-all duration-500";
+        dot.className = "w-2.5 h-2.5 rounded-full bg-indigo-500 animate-pulse shrink-0";
+      } else if (viewName === 'reports') {
+        vReports.classList.remove('hidden');
+        navReports.className = "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/40 font-bold transition-all cursor-pointer";
+        topBar.className = "h-1 w-full bg-gradient-to-r from-blue-600 via-indigo-500 to-sky-400 transition-all duration-500";
+        dot.className = "w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse shrink-0";
+      } else {
+        vHome.classList.remove('hidden');
+        navHome.className = "px-3 py-1.5 rounded-xl text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/40 font-bold transition-all cursor-pointer";
+        topBar.className = "h-1 w-full bg-gradient-to-r from-blue-600 via-indigo-500 to-sky-400 transition-all duration-500";
+        dot.className = "w-2.5 h-2.5 rounded-full bg-blue-600 dark:bg-blue-500 animate-pulse shrink-0";
+      }
+
+      // Smooth scroll target
+      if (targetScroll === 'top') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (targetScroll) {
+        setTimeout(() => {
+          const el = document.getElementById(targetScroll);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 50);
+      }
+      lucide.createIcons();
+    }
+
+    // Video Switching Controller for AI Lean Partner View
+    function switchVideo(tabIndex) {
+      const vidCont1 = document.getElementById('videoContainer1');
+      const vidCont2 = document.getElementById('videoContainer2');
+      const btnTab1 = document.getElementById('btnTabVid1');
+      const btnTab2 = document.getElementById('btnTabVid2');
+      const info1 = document.getElementById('videoInfo1');
+      const info2 = document.getElementById('videoInfo2');
+      const title = document.getElementById('currentVideoTitle');
+      const duration = document.getElementById('currentVideoDuration');
+
+      const v1 = document.getElementById('mainVideo1');
+      const v2 = document.getElementById('mainVideo2');
+
+      if (tabIndex === 1) {
+        vidCont1.classList.remove('hidden');
+        vidCont2.classList.add('hidden');
+        info1.classList.remove('hidden');
+        info2.classList.add('hidden');
+
+        btnTab1.className = "px-4 py-2 rounded-xl bg-indigo-600 text-white transition-all shadow-md flex items-center gap-1.5 cursor-pointer";
+        btnTab2.className = "px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all flex items-center gap-1.5 cursor-pointer";
+
+        title.innerText = "Video 1: Mô Hình Kinh Doanh Mới Cho FMCG - AI Lean Partner";
+        duration.innerText = "Thời lượng: 01:20";
+
+        if (v2) v2.pause();
+      } else {
+        vidCont1.classList.add('hidden');
+        vidCont2.classList.remove('hidden');
+        info1.classList.add('hidden');
+        info2.classList.remove('hidden');
+
+        btnTab2.className = "px-4 py-2 rounded-xl bg-indigo-600 text-white transition-all shadow-md flex items-center gap-1.5 cursor-pointer";
+        btnTab1.className = "px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all flex items-center gap-1.5 cursor-pointer";
+
+        title.innerText = "Video 2: Mentor Research - Đối Chuẩn Quốc Tế & Bài Học Pháp Lý";
+        duration.innerText = "Thời lượng: 01:52";
+
+        if (v1) v1.pause();
+      }
+      lucide.createIcons();
+    }
+
+    // Report Tab Switcher (VN vs ASEAN)
+    function switchReportTab(tab) {
+      const tabVN = document.getElementById('reportVN');
+      const tabAsean = document.getElementById('reportAsean');
+      const btnVN = document.getElementById('tabBtnVN');
+      const btnAsean = document.getElementById('tabBtnAsean');
+
+      if (tab === 'vn') {
+        tabVN.classList.remove('hidden');
+        tabAsean.classList.add('hidden');
+        btnVN.className = "px-3.5 py-1.5 rounded-lg bg-blue-600 text-white transition-all shadow-sm cursor-pointer";
+        btnAsean.className = "px-3.5 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-all cursor-pointer";
+      } else {
+        tabVN.classList.add('hidden');
+        tabAsean.classList.remove('hidden');
+        btnAsean.className = "px-3.5 py-1.5 rounded-lg bg-blue-600 text-white transition-all shadow-sm cursor-pointer";
+        btnVN.className = "px-3.5 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-all cursor-pointer";
+      }
+      lucide.createIcons();
+    }
+
+    // CADDi Modal Controllers
+    function openCaseStudyModal() {
+      const modal = document.getElementById('caseStudyModal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeCaseStudyModal() {
+      const modal = document.getElementById('caseStudyModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    window.addEventListener('click', (e) => {
+      const modal = document.getElementById('caseStudyModal');
+      if (e.target === modal) closeCaseStudyModal();
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeCaseStudyModal();
+    });
+
+    function handleImgFallback(img) {
+      img.classList.add('hidden');
+      const fallback = document.getElementById('imgFallbackNotice');
+      if (fallback) fallback.classList.remove('hidden');
+    }
+
+    function previewUserImage(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = document.getElementById('caseStudyImg');
+          img.src = e.target.result;
+          img.classList.remove('hidden');
+          document.getElementById('imgFallbackNotice').classList.add('hidden');
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    // Language Controller
+    let currentLang = localStorage.getItem('site_lang') || 'vi';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('site_lang', lang);
+      document.getElementById('langLabel').innerText = lang === 'en' ? 'VI' : 'EN';
+      
+      document.documentElement.lang = lang;
+      if (lang === 'vi') {
+        document.documentElement.classList.remove('font-en');
+        document.documentElement.classList.add('font-vi');
+      } else {
+        document.documentElement.classList.remove('font-vi');
+        document.documentElement.classList.add('font-en');
+      }
+
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (siteI18n[lang] && siteI18n[lang][key]) {
+          el.innerHTML = siteI18n[lang][key];
+        }
+      });
+      lucide.createIcons();
+    }
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+      setLanguage(currentLang === 'en' ? 'vi' : 'en');
+    });
+
+    // Theme (Dark / Light) Controller
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const sunIcon = document.getElementById('themeIconSun');
+    const moonIcon = document.getElementById('themeIconMoon');
+
+    function initTheme() {
+      const savedTheme = localStorage.getItem('site_theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        document.documentElement.classList.add('dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        moonIcon.classList.remove('hidden');
+        sunIcon.classList.add('hidden');
+      }
+      lucide.createIcons();
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('site_theme', isDark ? 'dark' : 'light');
+      if (isDark) {
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      } else {
+        moonIcon.classList.remove('hidden');
+        sunIcon.classList.add('hidden');
+      }
+      lucide.createIcons();
+    });
+
+    // URL Hash handling for direct deep linking
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash === 'vinasoy') navigateView('vinasoy', 'top');
+      else if (hash === 'vinasoy-arch') navigateView('vinasoy-arch', 'top');
+      else if (hash === 'vhr') navigateView('vhr', 'top');
+      else if (hash === 'ai-lean') navigateView('ai-lean', 'top');
+      else if (hash === 'reports') navigateView('reports', 'top');
+      else if (hash === 'home' || hash === '') navigateView('home', 'top');
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      setLanguage(currentLang);
+
+      const hash = window.location.hash.replace('#', '');
+      if (hash === 'vinasoy') navigateView('vinasoy', 'top');
+      else if (hash === 'vinasoy-arch') navigateView('vinasoy-arch', 'top');
+      else if (hash === 'vhr') navigateView('vhr', 'top');
+      else if (hash === 'ai-lean') navigateView('ai-lean', 'top');
+      else if (hash === 'reports') navigateView('reports', 'top');
+      else navigateView('home', 'top');
+
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
