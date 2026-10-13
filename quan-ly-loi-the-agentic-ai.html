@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản Trị Lợi Thế Cạnh Tranh Trong Kỷ Nguyên AI & Agentic AI | Trần Việt Anh</title>
+  <meta name="description" content="Nhận diện lỗ hổng chiến lược, khung đánh giá Build vs Buy, kết hợp Frameworks và quy trình vận hành Agentic AI cho FMCG, Bất Động Sản & Agency Marketing tại Việt Nam.">
+  <meta name="author" content="Trần Việt Anh">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Quản Trị Lợi Thế Cạnh Tranh Trong Kỷ Nguyên AI & Agentic AI | Trần Việt Anh">
+  <meta property="og:description" content="Managing Competitive Advantage in the Age of AI & Agentic AI - By Trần Việt Anh">
+  <meta property="og:url" content="https://vianh25.github.io/VietAnh_Portfolio/quan-ly-loi-the-agentic-ai.html">
+  <meta property="og:site_name" content="Trần Việt Anh Portfolio">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================================
+       CSS VARIABLES: THEME COLORS & PORTFOLIO COMPATIBILITY
+       ========================================================= */
+    :root[data-theme="dark"] {
+      --bg-body: #090d16;
+      --bg-surface: #111827;
+      --bg-card: #151f32;
+      --bg-card-hover: #1c2a44;
+      --nav-bg: rgba(9, 13, 22, 0.88);
+      
+      --text-main: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      
+      --border: #1e293b;
+      --border-accent: rgba(56, 189, 248, 0.35);
+      
+      --accent: #38bdf8;
+      --accent-hover: #7dd3fc;
+      --accent-glow: rgba(56, 189, 248, 0.12);
+      
+      --code-bg: #05080f;
+      --table-header: #0d1424;
+      --table-hover: rgba(56, 189, 248, 0.04);
+      --svg-node-bg: #101726;
+    }
+
+    :root[data-theme="light"] {
+      --bg-body: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-card: #f1f5f9;
+      --bg-card-hover: #e2e8f0;
+      --nav-bg: rgba(248, 250, 252, 0.9);
+      
+      --text-main: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      
+      --border: #e2e8f0;
+      --border-accent: rgba(2, 132, 199, 0.3);
+      
+      --accent: #0284c7;
+      --accent-hover: #0369a1;
+      --accent-glow: rgba(2, 132, 199, 0.08);
+      
+      --code-bg: #0f172a;
+      --table-header: #e2e8f0;
+      --table-hover: rgba(2, 132, 199, 0.04);
+      --svg-node-bg: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.8;
+      letter-spacing: -0.01em;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* =========================================================
+       GLOBAL NAVIGATION HEADER (PORTFOLIO NAVBAR)
+       ========================================================= */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--nav-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.85rem 1.5rem;
+    }
+
+    .nav-inner {
+      max-width: 1020px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand {
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--text-main);
+      text-decoration: none;
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .nav-brand span { color: var(--accent); }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: var(--accent);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-toggle {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* =========================================================
+       MAIN CONTENT CONTAINER
+       ========================================================= */
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 2.75rem 1.25rem 6rem;
+    }
+
+    .article-header {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      transition: opacity 0.2s;
+    }
+
+    .breadcrumb:hover { opacity: 0.8; }
+
+    h1 {
+      font-size: clamp(1.85rem, 4vw, 2.55rem);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.03em;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      align-items: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .meta-item strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .tag-badge {
+      background: var(--accent-glow);
+      color: var(--accent);
+      border: 1px solid var(--border-accent);
+      padding: 0.2rem 0.65rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* TOC Box */
+    .toc-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0 2.5rem;
+    }
+
+    .toc-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .toc-list a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+
+    .toc-list a:hover {
+      color: var(--accent);
+      padding-left: 5px;
+    }
+
+    /* Headings & Texts */
+    h2 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin: 3.25rem 0 1rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 48px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 1.85rem 0 0.65rem;
+      color: var(--text-main);
+    }
+
+    p { margin-bottom: 1.35rem; color: var(--text-secondary); }
+    ul, ol { margin: 0 0 1.35rem 1.4rem; color: var(--text-secondary); }
+    li { margin-bottom: 0.5rem; }
+    strong { color: var(--text-main); }
+
+    /* Diagrams & SVGs */
+    .diagram-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      margin: 2.25rem 0;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .diagram-card svg {
+      width: 100%;
+      height: auto;
+      max-width: 780px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .diagram-caption {
+      margin-top: 1.1rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* Tables */
+    .table-container {
+      overflow-x: auto;
+      margin: 1.85rem 0 2.35rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      background-color: var(--bg-surface);
+    }
+
+    th, td {
+      padding: 1rem 1.2rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background-color: var(--table-header);
+      color: var(--accent);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background-color: var(--table-hover); }
+
+    /* Code Blocks */
+    pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      padding: 1.25rem;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88rem;
+      color: #38bdf8;
+      line-height: 1.6;
+      margin: 1.5rem 0 2rem;
+    }
+
+    /* Author & Contact Box */
+    .author-card {
+      margin-top: 4.5rem;
+      padding: 2.25rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .author-header {
+      display: flex;
+      align-items: center;
+      gap: 1.15rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .author-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 1.35rem;
+      flex-shrink: 0;
+    }
+
+    .author-title h4 {
+      font-size: 1.3rem;
+      color: var(--text-main);
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .author-title span {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .contact-channels {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    .contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.6rem 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .contact-pill:hover {
+      border-color: var(--accent);
+      background-color: var(--bg-card-hover);
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .copyright-note {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px dashed var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* =========================================================
+       GLOBAL SITE FOOTER (PORTFOLIO FOOTER)
+       ========================================================= */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      background-color: var(--bg-surface);
+      padding: 3.5rem 1.5rem 2rem;
+      margin-top: 6rem;
+    }
+
+    .footer-inner {
+      max-width: 1020px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+    }
+
+    .footer-col h5 {
+      color: var(--text-main);
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+    }
+
+    .footer-col p {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      max-width: 400px;
+      margin-bottom: 0;
+      line-height: 1.7;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.92rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.75rem;
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* Bilingual System */
+    [lang-content="vi"] { display: block; }
+    [lang-content="en"] { display: none; }
+
+    html[data-lang="en"] [lang-content="vi"] { display: none !important; }
+    html[data-lang="en"] [lang-content="en"] { display: block !important; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-menu { display: none; }
+      .contact-channels { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- GLOBAL NAVIGATION HEADER (PORTFOLIO NAVBAR) -->
+<nav class="site-nav" aria-label="Main Navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      Trần Việt Anh<span>.</span>
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="index.html#about"><span lang-content="vi">Về tôi</span><span lang-content="en">About</span></a></li>
+      <li><a href="index.html#experience"><span lang-content="vi">Kinh nghiệm</span><span lang-content="en">Experience</span></a></li>
+      <li><a href="index.html#projects"><span lang-content="vi">Dự án & Case Studies</span><span lang-content="en">Projects</span></a></li>
+      <li><a href="index.html#articles" class="active"><span lang-content="vi">Bài viết & Insights</span><span lang-content="en">Insights</span></a></li>
+      <li><a href="#contact"><span lang-content="vi">Liên hệ</span><span lang-content="en">Contact</span></a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Dark/Light Theme Switcher -->
+      <button class="btn-toggle" id="themeToggleBtn" aria-label="Toggle Theme">
+        <span id="themeIcon">☀️</span>
+        <span id="themeLabel">Light</span>
+      </button>
+      <!-- VI / EN Language Switcher -->
+      <button class="btn-toggle" id="langToggleBtn" aria-label="Toggle Language">
+        🌐 <span id="langLabel">English</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+  <header class="article-header">
+    <a href="index.html#articles" class="breadcrumb">
+      <span lang-content="vi">&larr; Danh mục Bài viết & Góc nhìn Chiến lược</span>
+      <span lang-content="en">&larr; Back to Strategic Insights & Articles</span>
+    </a>
+
+    <h1 lang-content="vi">Quản Trị Lợi Thế Cạnh Tranh Trong Kỷ Nguyên AI & Agentic AI</h1>
+    <h1 lang-content="en">Managing Competitive Advantage in the Age of AI & Agentic AI</h1>
+    
+    <div class="meta-bar">
+      <div class="meta-item">
+        <span lang-content="vi">Tác giả: <strong>Trần Việt Anh</strong></span>
+        <span lang-content="en">Author: <strong>Trần Việt Anh</strong></span>
+      </div>
+      <div class="meta-item">
+        <span lang-content="vi">Vai trò: <strong>Strategic Consulting Director</strong></span>
+        <span lang-content="en">Role: <strong>Strategic Consulting Director</strong></span>
+      </div>
+      <span class="tag-badge">Việt Nam Context</span>
+    </div>
+  </header>
+
+  <!-- Table of Contents -->
+  <nav class="toc-card" aria-label="Table of Contents">
+    <div class="toc-title">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      <span lang-content="vi">Mục Lục Nội Dung</span>
+      <span lang-content="en">Table of Contents</span>
+    </div>
+    <ul class="toc-list">
+      <li>
+        <a href="#phan-1">
+          <span lang-content="vi">1. 5 Điểm Yếu Cốt Lõi Của Doanh Nghiệp Trong Quản Lý Lợi Thế</span>
+          <span lang-content="en">1. Five Core Organizational Vulnerabilities in Advantage Management</span>
+        </a>
+      </li>
+      <li>
+        <a href="#phan-2">
+          <span lang-content="vi">2. Khung Đánh Giá Build vs. Buy Dành Cho 3 Ngành</span>
+          <span lang-content="en">2. Build vs. Buy Evaluation Framework for 3 Key Industries</span>
+        </a>
+      </li>
+      <li>
+        <a href="#phan-3">
+          <span lang-content="vi">3. Khuyến Nghị: Frameworks, Chu Trình SPAR & Phân Quyền Tự Chủ</span>
+          <span lang-content="en">3. Practical Recommendations: Frameworks, SPAR & Layered Governance</span>
+        </a>
+      </li>
+      <li>
+        <a href="#phan-4">
+          <span lang-content="vi">4. Bảng Giải Thích Thuật Ngữ (Glossary)</span>
+          <span lang-content="en">4. Strategic Glossary of Terms</span>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <span lang-content="vi">5. Kết Nối & Tư Vấn Chiến Lược</span>
+          <span lang-content="en">5. Contact & Consulting Inquiries</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <p lang-content="vi">Sự bùng nổ của Generative AI và đặc biệt là <strong>Agentic AI</strong> (hệ thống AI có khả năng tự chủ lập kế hoạch, suy luận đa bước, ra quyết định và gọi công cụ thực thi) đang làm thay đổi bản chất của <strong>lợi thế cạnh tranh (competitive advantage)</strong>. Lợi thế không còn là "con hào kinh tế kiên cố" mang tính vĩnh cửu, mà đã trở thành <strong>lợi thế thoáng qua (transient advantage)</strong> với chu kỳ vòng đời ngày càng ngắn.</p>
+    <p lang-content="en">The rapid emergence of Generative AI and notably <strong>Agentic AI</strong> (autonomous systems capable of multi-step planning, iterative reasoning, decision-making, and tool invocation) is fundamentally dismantling traditional views on <strong>competitive advantage</strong>. Sustainable static moats are fading, giving way to <strong>transient advantages</strong> characterized by compressed lifecycles and rapid obsolescence.</p>
+
+    <!-- HÌNH ẢNH 1: Chu trình SPAR Vector SVG -->
+    <div class="diagram-card">
+      <svg viewBox="0 0 760 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="25" width="160" height="95" rx="8" fill="var(--svg-node-bg)" stroke="#38bdf8" stroke-width="2"/>
+        <text x="90" y="60" text-anchor="middle" fill="#38bdf8" font-size="14" font-weight="700" font-family="sans-serif">1. SENSE</text>
+        <text x="90" y="85" text-anchor="middle" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">DMS, POS, CRM, Social,</text>
+        <text x="90" y="102" text-anchor="middle" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">Dữ liệu quy hoạch 24/7</text>
+
+        <path d="M170 72.5 H200" stroke="#22d3ee" stroke-width="2"/>
+
+        <rect x="200" y="25" width="160" height="95" rx="8" fill="var(--svg-node-bg)" stroke="#38bdf8" stroke-width="2"/>
+        <text x="280" y="60" text-anchor="middle" fill="#38bdf8" font-size="14" font-weight="700" font-family="sans-serif">2. PLAN</text>
+        <text x="280" y="85" text-anchor="middle" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">Phân tách mục tiêu,</text>
+        <text x="280" y="102" text-anchor="middle" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">Mô phỏng kịch bản tối ưu</text>
+
+        <path d="M360 72.5 H390" stroke="#22d3ee" stroke-width="2"/>
+
+        <rect x="390" y="25" width="160" height="95" rx="8" fill="var(--svg-node-bg)" stroke="#38bdf8" stroke-width="2"/>
+        <text x="470" y="60" text-anchor="middle" fill="#38bdf8" font-size="14" font-weight="700" font-family="sans-serif">3. ACT</text>
+        <text x="470" y="85" text-anchor="middle" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">Gọi API công cụ, đổi ngân</text>
+        <text x="470" y="102" text-anchor="middle" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">sách, kích hoạt phê duyệt</text>
+
+        <path d="M550 72.5 H580" stroke="#22d3ee" stroke-width="2"/>
+
+        <rect x="580" y="25" width="160" height="95" rx="8" fill="var(--svg-node-bg)" stroke="#38bdf8" stroke-width="2"/>
+        <text x="660" y="60" text-anchor="middle" fill="#38bdf8" font-size="14" font-weight="700" font-family="sans-serif">4. REFLECT</text>
+        <text x="660" y="85" text-anchor="middle" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">Đo lường độ lệch, cập</text>
+        <text x="660" y="102" text-anchor="middle" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">nhật Episodic Memory</text>
+
+        <!-- Loopback feedback -->
+        <path d="M660 120 V175 H90 V120" stroke="#22d3ee" stroke-width="2" stroke-dasharray="6 6"/>
+        <text x="375" y="195" text-anchor="middle" fill="#22d3ee" font-size="12" font-weight="600" font-family="sans-serif">Vòng lặp tự học và phản tư liên tục (Sense - Plan - Act - Reflect Loop)</text>
+      </svg>
+      <div class="diagram-caption">
+        <span lang-content="vi">Hình 1: Vòng lặp tự chủ Sense - Plan - Act - Reflect (SPAR) của Agentic AI</span>
+        <span lang-content="en">Figure 1: The Sense - Plan - Act - Reflect (SPAR) Autonomous Agent Cycle</span>
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <section id="phan-1">
+      <h2 lang-content="vi">1. 5 Điểm Yếu Cốt Lõi Của Doanh Nghiệp Trong Quản Lý Lợi Thế</h2>
+      <h2 lang-content="en">1. Five Core Vulnerabilities in Advantage Management</h2>
+      
+      <h3 lang-content="vi">1.1. Bẫy hàng hóa hóa công nghệ (The Commoditization Trap)</h3>
+      <h3 lang-content="en">1.1. The Technology Commoditization Trap</h3>
+      <p lang-content="vi">Nhiều tổ chức dồn ngân sách xây dựng các ứng dụng chatbot, dịch thuật hoặc tạo nội dung bề mặt và ngộ nhận đó là "hào kinh tế". Thực tế, các mô hình nền tảng (Foundation Models) phát triển nhanh chóng; tính năng doanh nghiệp mất 6 tháng phát triển có thể trở thành mặc định trên các nền tảng SaaS vào quý sau.</p>
+      <p lang-content="en">Enterprises often channel heavy capital into surface-level conversational bots or generative content tools, mistaking them for durable moats. In reality, foundation models evolve rapidly; capabilities requiring half a year of internal development routinely become out-of-the-box commodity features in subsequent SaaS release cycles.</p>
+      <ul>
+        <li>
+          <strong lang-content="vi">Bất động sản:</strong>
+          <strong lang-content="en">Real Estate:</strong>
+          <span lang-content="vi">Các sàn môi giới chi tiền làm chatbot tư vấn căn hộ trên fanpage/website. Vài tháng sau, mọi đối thủ đều có thể mua gói SaaS tương tự với chi phí vài trăm nghìn đồng mỗi tháng; lợi thế biên biến mất.</span>
+          <span lang-content="en">Brokers invested heavily into standard property FAQ bots. Within months, competitors adopted superior off-the-shelf SaaS alternatives for negligible monthly fees, reducing marginal advantage to zero.</span>
+        </li>
+        <li>
+          <strong lang-content="vi">Agency Marketing:</strong>
+          <strong lang-content="en">Marketing Agencies:</strong>
+          <span lang-content="vi">Dịch vụ "Sáng tạo nội dung & visual AI" bị hàng hóa hóa khi nhãn hàng tự trang bị ChatGPT, Midjourney hay Canva AI, đẩy agency vào cuộc chiến giảm giá sâu (race to the bottom).</span>
+          <span lang-content="en">Agencies packaging basic AI copywriting and visuals suffered severe commoditization as in-house brand teams adopted the same LLMs and image tools, sparking an aggressive race to the bottom.</span>
+        </li>
+      </ul>
+
+      <h3 lang-content="vi">1.2. Ảo tưởng về "Mỏ vàng dữ liệu" nhưng thiếu ngữ cảnh hành động</h3>
+      <h3 lang-content="en">1.2. The Passive "Data Goldmine" Illusion</h3>
+      <p lang-content="vi">Doanh nghiệp tích lũy dữ liệu nhiều năm nhưng để ở dạng phân tán (data silos) hoặc chưa chuẩn hóa. Với Agentic AI, dữ liệu chết không tạo ra năng lực hành động.</p>
+      <p lang-content="en">Decades of accumulated logs and CRM files remain trapped in isolated silos. For Agentic AI systems, ungrounded, uncurated static data fails to translate into actionable agency.</p>
+      <ul>
+        <li>
+          <strong lang-content="vi">FMCG:</strong>
+          <strong lang-content="en">FMCG:</strong>
+          <span lang-content="vi">Dữ liệu kênh truyền thống (GT) và hiện đại (MT) qua DMS nằm rời rạc giữa Trade Marketing, Sales và Logistics. Agent không thể tự nhận biết: <em>"Khi một điểm bán miền Tây ngập lụt, cần tự động giảm SKU cồng kềnh và tăng lượng trữ hàng tiêu dùng đóng gói nhỏ"</em>.</span>
+          <span lang-content="en">Extensive DMS datasets across General Trade (GT) and Modern Trade (MT) remain disconnected across Sales and Logistics. Agents cannot contextually deduce: <em>"When seasonal floods hit the Mekong Delta, immediately scale down bulky SKUs and surge compact essentials."</em></span>
+        </li>
+        <li>
+          <strong lang-content="vi">Agency Marketing:</strong>
+          <strong lang-content="en">Agencies:</strong>
+          <span lang-content="vi">Hàng trăm pitch deck và post-campaign report nằm rải rác trên Drive cá nhân. Agent không thể học được "khẩu vị" khách hàng, brand voice hay công thức chiến dịch win-rate cao.</span>
+          <span lang-content="en">Hundreds of past pitch decks and campaign post-mortems sit unstructured in disparate drives, leaving internal agents unable to learn nuanced client preferences or winning creative frameworks.</span>
+        </li>
+      </ul>
+
+      <h3 lang-content="vi">1.3. "Độ trễ thể chế" trước tính tự chủ của Agent</h3>
+      <h3 lang-content="en">1.3. Institutional Latency vs. Agentic Velocity</h3>
+      <p lang-content="vi">Sự xung đột giữa tốc độ xử lý thời gian thực của máy và cơ chế phê duyệt thủ công nhiều tầng nảy sinh điểm nghẽn nghiêm trọng:</p>
+      <p lang-content="en">The clash between real-time autonomous agent velocity and bureaucratic, multi-layered approval hierarchies creates paralyzing organizational friction:</p>
+      <ul>
+        <li>
+          <strong lang-content="vi">FMCG:</strong>
+          <strong lang-content="en">FMCG:</strong>
+          <span lang-content="vi">Mùa Mega Sale, Multi-Agent có thể phát hiện biến động tồn kho và đề xuất chỉnh chiết khấu theo giờ. Nhưng quy trình duyệt qua 3 cấp quản lý mất 3–5 ngày khiến doanh nghiệp vuột mất cơ hội bán lẻ.</span>
+          <span lang-content="en">During peak shopping festivals, multi-agent pipelines calculate real-time elasticity and suggest hourly dealer discounts. However, standard review channels take 3–5 days, completely missing volatile demand spikes.</span>
+        </li>
+        <li>
+          <strong lang-content="vi">Agency Marketing:</strong>
+          <strong lang-content="en">Agencies:</strong>
+          <span lang-content="vi">Trong Performance Marketing, Agent có thể tự phát hiện ad fatigue và tự tạo visual mới để chạy A/B test. Nhưng quy trình duyệt nội dung mất 3 ngày khiến lãng phí ngân sách media lớn.</span>
+          <span lang-content="en">Performance agents detect creative fatigue and generate A/B variations instantly, yet client multi-tier approvals require 72 hours, draining media spend on sub-optimal ads.</span>
+        </li>
+      </ul>
+
+      <h3 lang-content="vi">1.4. Tối ưu cục bộ thay vì định hình lại mô hình vận hành</h3>
+      <h3 lang-content="en">1.4. Local Task Optimization vs. Systemic Redesign</h3>
+      <p lang-content="vi">Trang bị công cụ cho từng cá nhân làm việc nhanh hơn 10–20% không tạo ra bước nhảy vọt về biên lợi nhuận hay mô hình kinh doanh.</p>
+      <p lang-content="en">Arming employees with ad-hoc generative tools for minor personal speed gains fails to transform margin structures or unit economics.</p>
+      <ul>
+        <li>
+          <strong lang-content="vi">Bất động sản:</strong>
+          <strong lang-content="en">Real Estate:</strong>
+          <span lang-content="vi">Môi giới dùng AI viết bài quảng cáo chỉ là năng suất cá nhân. Mô hình cấp hệ thống là chuỗi: Agent rà soát quy hoạch &rarr; Agent định giá &rarr; Agent chấm điểm lead &rarr; Tự động phân bổ giỏ hàng cho môi giới tối ưu.</span>
+          <span lang-content="en">Brokers generating listings faster is a marginal individual gain. The systemic solution is an interconnected agent pipeline: Zoning Verification &rarr; Automated Underwriting &rarr; Predictive Lead Scoring &rarr; Dynamic Inventory Allocation.</span>
+        </li>
+        <li>
+          <strong lang-content="vi">Agency Marketing:</strong>
+          <strong lang-content="en">Agencies:</strong>
+          <span lang-content="vi">Cấp tài khoản AI cho Copywriter chỉ tăng số lượng bài (output). Chuyển đổi mô hình là hệ thống: Nhận brief &rarr; Agent bóc tách insight & đối thủ &rarr; Agent dựng concept nháp &rarr; Chuyên gia chỉ mài giũa chiều sâu và pitching trong 48 giờ.</span>
+          <span lang-content="en">Giving writers prompts merely bloats volume. Systemic transformation involves an end-to-end Virtual Pitching engine executing brief decomposition, competitor analysis, and concept drafts within 48 hours.</span>
+        </li>
+      </ul>
+
+      <h3 lang-content="vi">1.5. Khủng hoảng tri thức ngầm (Tacit Knowledge Erosion)</h3>
+      <h3 lang-content="en">1.5. The Erosion of Tacit Knowledge</h3>
+      <p lang-content="vi">Khi phó mặc các khâu sơ cấp cho AI, nhân sự mất đi cơ hội tích lũy trực giác và trải nghiệm thực tế. Cảm quan thực địa của Sales Supervisor tại chợ truyền thống, nghệ thuật đàm phán thương vụ BĐS giá trị cao, hay sự nhạy cảm văn hóa bản địa (cultural nuances) của Planner là những tri thức ngầm AI không thể thay thế.</p>
+      <p lang-content="en">Over-delegating foundational research to AI strips junior teams of critical observational apprenticeship. Field intuition of sales supervisors across wet markets, high-stakes relationship capital in luxury real estate, and nuanced cultural understanding in brand planning remain irreproducible tacit assets.</p>
+    </section>
+
+    <!-- SECTION 2: BẢNG BUILD VS BUY ĐÃ TÁCH BIỆT CHUẨN XÁC VI / EN -->
+    <section id="phan-2">
+      <h2 lang-content="vi">2. Khung Đánh Giá Build vs. Buy Dành Cho 3 Ngành</h2>
+      <h2 lang-content="en">2. Build vs. Buy Evaluation Framework for 3 Industries</h2>
+      <p lang-content="vi">Nguyên tắc cốt lõi: <strong>"Buy the Foundation, Build the Context"</strong> (Mua nền tảng hạ tầng, Tự xây dựng ngữ cảnh và logic nghiệp vụ).</p>
+      <p lang-content="en">Governing Principle: <strong>"Buy the Foundation, Build the Context"</strong> (Procure external foundation models; architect internal domain context, orchestration, and business logic).</p>
+
+      <!-- BẢNG TIẾNG VIỆT (3 CỘT CHUẨN) -->
+      <div class="table-container" lang-content="vi">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Tiêu chí đánh giá</th>
+              <th style="width: 37%;">MUA (Buy / SaaS Platform)</th>
+              <th style="width: 38%;">TỰ XÂY (Build / In-house Agent)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Bản chất nghiệp vụ</strong></td>
+              <td>Quy trình chuẩn hóa, tính phổ quát toàn ngành.</td>
+              <td>Logic định giá độc quyền, kiểm soát rủi ro, tri thức chiến lược.</td>
+            </tr>
+            <tr>
+              <td><strong>Bảo mật dữ liệu</strong></td>
+              <td>Dữ liệu phi nhạy cảm, hạ tầng SaaS enterprise.</td>
+              <td>Dữ liệu khách hàng VIP, biên lợi nhuận kênh, cẩm nang chiến lược độc quyền.</td>
+            </tr>
+            <tr>
+              <td><strong>Ngành FMCG</strong></td>
+              <td>Social Listening, Computer Vision nhận diện quầy kệ trưng bày.</td>
+              <td>Agent Dynamic Trade Promotion kết nối trực tiếp cơ sở dữ liệu DMS/ERP.</td>
+            </tr>
+            <tr>
+              <td><strong>Ngành Bất Động Sản</strong></td>
+              <td>Dựng phối cảnh ảo 3D (Virtual Staging), CRM lọc lead sơ bộ.</td>
+              <td>Agent thẩm định pháp lý & định giá M&A quỹ đất (Due Diligence).</td>
+            </tr>
+            <tr>
+              <td><strong>Ngành Agency Marketing</strong></td>
+              <td>Midjourney, Runway, Firefly, Buzzmetrics/YouNet Media.</td>
+              <td>Brand Voice & Creative Intelligence Engine (Virtual Strategic War Room).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BẢNG TIẾNG ANH (3 CỘT CHUẨN) -->
+      <div class="table-container" lang-content="en">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Evaluation Criteria</th>
+              <th style="width: 37%;">BUY (Commoditized / SaaS Platform)</th>
+              <th style="width: 38%;">BUILD (Proprietary / In-house Agent)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Business Nature</strong></td>
+              <td>Standardized, cross-industry commoditized operational tasks.</td>
+              <td>Proprietary pricing algorithms, core IP, underwriting logic.</td>
+            </tr>
+            <tr>
+              <td><strong>Data Security</strong></td>
+              <td>Non-sensitive data covered by standard enterprise SaaS compliance.</td>
+              <td>High-net-worth client books, margin structures, strategic trade secrets.</td>
+            </tr>
+            <tr>
+              <td><strong>FMCG Sector</strong></td>
+              <td>Social listening platforms, generic retail shelf computer vision.</td>
+              <td>Dynamic Trade Promotion & Inventory Agents coupled with core DMS/ERP.</td>
+            </tr>
+            <tr>
+              <td><strong>Real Estate Sector</strong></td>
+              <td>3D virtual staging engines, generalized inbound lead capture CRM.</td>
+              <td>Due diligence, title clearance, and predictive land valuation graphs.</td>
+            </tr>
+            <tr>
+              <td><strong>Agency Marketing</strong></td>
+              <td>Generative design APIs, third-party social listening suites.</td>
+              <td>Proprietary Brand Voice & Virtual Strategic War Room engines.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="phan-3">
+      <h2 lang-content="vi">3. Khuyến Nghị Thiết Thực: Frameworks, Chu Trình SPAR & Phân Quyền Tự Chủ</h2>
+      <h2 lang-content="en">3. Practical Recommendations: Frameworks, SPAR & Layered Governance</h2>
+      
+      <h3 lang-content="vi">3.1. Linh hoạt lựa chọn Agentic Framework</h3>
+      <h3 lang-content="en">3.1. Pragmatic Framework Selection</h3>
+      <ul>
+        <li>
+          <strong lang-content="vi">Stateful Graph (như LangGraph, LlamaIndex Workflows):</strong>
+          <strong lang-content="en">Stateful Graph-Based (LangGraph, LlamaIndex Workflows):</strong>
+          <span lang-content="vi">Dành cho các luồng đòi hỏi tính chính xác tuyệt đối, rẽ nhánh chặt chẽ và có điểm can thiệp của con người (Thẩm định pháp lý BĐS, kiểm soát công nợ FMCG).</span>
+          <span lang-content="en">Ideal for deterministic, high-compliance workflows demanding branch controls and Human-in-the-loop checkpoints (Title checks in Real Estate, credit limits in FMCG).</span>
+        </li>
+        <li>
+          <strong lang-content="vi">Role-playing Multi-agent (như CrewAI, AutoGen):</strong>
+          <strong lang-content="en">Role-playing Multi-Agent Systems (CrewAI, AutoGen):</strong>
+          <span lang-content="vi">Dành cho bài toán sáng tạo và mô phỏng tranh luận mở (Lập kế hoạch chiến dịch mùa vụ FMCG; Mô hình Virtual Pitching War Room của Agency).</span>
+          <span lang-content="en">Suited for open-ended creative coordination and multi-perspective deliberation (FMCG festive campaign design, Agency Virtual Pitching war rooms).</span>
+        </li>
+      </ul>
+
+      <!-- HÌNH ẢNH 2: Ma trận phân quyền 3 tầng Layered Autonomy Matrix SVG -->
+      <div class="diagram-card">
+        <svg viewBox="0 0 760 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Tầng 1 -->
+          <rect x="20" y="20" width="720" height="65" rx="8" fill="var(--svg-node-bg)" stroke="#38bdf8" stroke-width="1.5"/>
+          <rect x="35" y="32" width="130" height="40" rx="6" fill="rgba(56, 189, 248, 0.15)"/>
+          <text x="100" y="56" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="700" font-family="sans-serif">TẦNG 1: FULL AUTO</text>
+          <text x="180" y="47" fill="var(--text-main)" font-size="13" font-weight="600" font-family="sans-serif">Tự chủ hoàn toàn (Zero Human Intervention)</text>
+          <text x="180" y="68" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">Thu thập tin quy hoạch, theo dõi đối thủ, lọc rác dữ liệu, báo cáo sell-out định kỳ hàng tuần</text>
+
+          <!-- Tầng 2 -->
+          <rect x="20" y="98" width="720" height="65" rx="8" fill="var(--svg-node-bg)" stroke="#22d3ee" stroke-width="1.5"/>
+          <rect x="35" y="110" width="130" height="40" rx="6" fill="rgba(34, 211, 238, 0.15)"/>
+          <text x="100" y="134" text-anchor="middle" fill="#22d3ee" font-size="12" font-weight="700" font-family="sans-serif">TẦNG 2: HITL GATES</text>
+          <text x="180" y="125" fill="var(--text-main)" font-size="13" font-weight="600" font-family="sans-serif">Con người phê duyệt trước khi kích hoạt (Human-in-the-loop)</text>
+          <text x="180" y="146" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">Duyệt ngân sách khuyến mãi vùng, chốt giỏ hàng VIP, thay đổi budget ads, xuất bản proposal</text>
+
+          <!-- Tầng 3 -->
+          <rect x="20" y="176" width="720" height="65" rx="8" fill="var(--svg-node-bg)" stroke="#f59e0b" stroke-width="1.5"/>
+          <rect x="35" y="188" width="130" height="40" rx="6" fill="rgba(245, 158, 11, 0.15)"/>
+          <text x="100" y="212" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">TẦNG 3: HUMAN-LED</text>
+          <text x="180" y="203" fill="var(--text-main)" font-size="13" font-weight="600" font-family="sans-serif">Con người dẫn dắt hoàn toàn (AI-assisted only)</text>
+          <text x="180" y="224" fill="var(--text-secondary)" font-size="11" font-family="sans-serif">Đàm phán liên minh chiến lược, M&A quỹ đất, xử lý khủng hoảng truyền thông nhạy cảm</text>
+        </svg>
+        <div class="diagram-caption">
+          <span lang-content="vi">Hình 2: Ma trận phân quyền tự chủ 3 tầng (Layered Autonomy Governance Matrix)</span>
+          <span lang-content="en">Figure 2: Three-Tier Layered Autonomy Governance Framework</span>
+        </div>
+      </div>
+
+      <h3 lang-content="vi">3.2. Bốn khuyến nghị thực thi chiến lược</h3>
+      <h3 lang-content="en">3.2. Strategic Implementation Imperatives</h3>
+      <ol>
+        <li>
+          <strong lang-content="vi">Xây dựng Context Engine từ tri thức độc quyền:</strong>
+          <strong lang-content="en">Build Context Engines Grounded in Local Tacit Knowledge:</strong>
+          <span lang-content="vi">Số hóa văn hóa vùng miền, tập quán thanh toán đại lý, và case study thành công thành đồ thị tri thức (Knowledge Graph).</span>
+          <span lang-content="en">Structure regional buyer habits, dealer payment cycles, and past winning frameworks into organizational Knowledge Graphs.</span>
+        </li>
+        <li>
+          <strong lang-content="vi">Thiết lập cơ chế kiểm soát rủi ro phân tầng:</strong>
+          <strong lang-content="en">Institutionalize Layered Guardrails:</strong>
+          <span lang-content="vi">Tách biệt rõ ràng tác vụ lặp tự động với các quyết định chi tiêu và cam kết pháp lý.</span>
+          <span lang-content="en">Decouple high-velocity automation from irreversible commercial commitments and legal approvals.</span>
+        </li>
+        <li>
+          <strong lang-content="vi">Nâng cấp nhân sự thành "Nhà điều phối Agent":</strong>
+          <strong lang-content="en">Upskill Talent into Agent Orchestrators:</strong>
+          <span lang-content="vi">Chuyển đổi vai trò từ thợ gõ máy sang chuyên gia đóng khung bài toán và dịch chuyển mô hình agency sang <em>Value-based pricing</em>.</span>
+          <span lang-content="en">Transition teams from rote creators to problem architects, aligning agency remuneration toward value-based pricing over billable hours.</span>
+        </li>
+        <li>
+          <strong lang-content="vi">Đo lường ROI qua tốc độ chu kỳ (Cycle Time):</strong>
+          <strong lang-content="en">Measure ROI through Cycle Time Velocity:</strong>
+          <span lang-content="vi">Giảm thời gian phản ứng trước biến động thị trường từ 2 tuần xuống còn 24–48 giờ.</span>
+          <span lang-content="en">Benchmark transformation success by organizational cycle-time compression—shrinking market response windows from weeks to 24–48 hours.</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SECTION 4: BẢNG GLOSSARY ĐÃ TÁCH BIỆT CHUẨN XÁC VI / EN -->
+    <section id="phan-4">
+      <h2 lang-content="vi">4. Bảng Giải Thích Thuật Ngữ (Glossary)</h2>
+      <h2 lang-content="en">4. Strategic Glossary of Terms</h2>
+      
+      <!-- BẢNG GLOSSARY TIẾNG VIỆT (3 CỘT CHUẨN) -->
+      <div class="table-container" lang-content="vi">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 22%;">Thuật ngữ</th>
+              <th style="width: 25%;">Tên gốc tiếng Anh</th>
+              <th style="width: 53%;">Ý nghĩa cốt lõi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Agentic AI</strong></td>
+              <td>Agentic Artificial Intelligence</td>
+              <td>Hệ thống AI có khả năng tự lập kế hoạch nhiều bước, ra quyết định và gọi công cụ để tự chủ thực thi mục tiêu.</td>
+            </tr>
+            <tr>
+              <td><strong>Lợi thế thoáng qua</strong></td>
+              <td>Transient Advantage</td>
+              <td>Lợi thế cạnh tranh chu kỳ ngắn; doanh nghiệp phải liên tục nắm bắt và chủ động tái tạo lợi thế trong môi trường biến động nhanh.</td>
+            </tr>
+            <tr>
+              <td><strong>Hàng hóa hóa</strong></td>
+              <td>The Commoditization Trap</td>
+              <td>Hiện tượng giải pháp công nghệ nhanh chóng trở nên đại trà, rẻ tiền và mất dần tính khác biệt cạnh tranh.</td>
+            </tr>
+            <tr>
+              <td><strong>Tri thức ngầm</strong></td>
+              <td>Tacit Knowledge</td>
+              <td>Trực giác, kinh nghiệm thực chiến và cảm quan văn hóa của con người mà thuật toán không thể học trực tiếp từ tài liệu tĩnh.</td>
+            </tr>
+            <tr>
+              <td><strong>Graph RAG</strong></td>
+              <td>Knowledge Graph RAG</td>
+              <td>Cơ chế truy xuất dữ liệu dựa trên đồ thị liên kết ngữ nghĩa giữa các thực thể kinh doanh, giúp AI hiểu sâu logic quan hệ.</td>
+            </tr>
+            <tr>
+              <td><strong>Human-in-the-loop</strong></td>
+              <td>HITL</td>
+              <td>Điểm chốt chặn bắt buộc phải có sự phê duyệt của con người trước khi Agent kích hoạt hành động rủi ro.</td>
+            </tr>
+            <tr>
+              <td><strong>Episodic Memory</strong></td>
+              <td>Episodic Memory</td>
+              <td>Bộ nhớ lưu trữ diễn biến và bài học hiệu chỉnh từ các phiên làm việc trước giúp Agent thông minh và chính xác hơn theo thời gian.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BẢNG GLOSSARY TIẾNG ANH (3 CỘT CHUẨN) -->
+      <div class="table-container" lang-content="en">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 22%;">Strategic Term</th>
+              <th style="width: 25%;">Technical Anchor / Alias</th>
+              <th style="width: 53%;">Core Strategic Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Agentic AI</strong></td>
+              <td>Agentic Artificial Intelligence</td>
+              <td>Autonomous AI systems exhibiting agency: self-directed planning, multi-step tool use, and goal execution.</td>
+            </tr>
+            <tr>
+              <td><strong>Transient Advantage</strong></td>
+              <td>Dynamic Competitive Advantage</td>
+              <td>Short-cycle competitive advantage requiring continuous capture and rapid pivoting rather than reliance on defensive moats.</td>
+            </tr>
+            <tr>
+              <td><strong>Commoditization</strong></td>
+              <td>The Commoditization Trap</td>
+              <td>The rapid process where proprietary technology features quickly become standard, low-cost utility offerings.</td>
+            </tr>
+            <tr>
+              <td><strong>Tacit Knowledge</strong></td>
+              <td>Experiential Intuition</td>
+              <td>Intuitive, experiential, and cultural know-how held by human experts that cannot be coded via static documentation.</td>
+            </tr>
+            <tr>
+              <td><strong>Graph RAG</strong></td>
+              <td>Knowledge Graph RAG</td>
+              <td>Retrieval-Augmented Generation structured through interconnected knowledge graphs mapping entity relationships.</td>
+            </tr>
+            <tr>
+              <td><strong>Human-in-the-loop</strong></td>
+              <td>HITL</td>
+              <td>Mandatory human verification gates integrated at high-risk decision forks before action execution.</td>
+            </tr>
+            <tr>
+              <td><strong>Episodic Memory</strong></td>
+              <td>Contextual History Storage</td>
+              <td>Long-term storage of contextual interaction histories and human corrections, enabling cumulative autonomous learning.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 5: AUTHOR & CONTACT WITH PHONE (+84) 903 096 255 -->
+    <section id="contact" class="author-card">
+      <div class="author-header">
+        <div class="author-avatar">VA</div>
+        <div class="author-title">
+          <h4>Trần Việt Anh</h4>
+          <span>Strategic Consulting Director</span>
+        </div>
+      </div>
+
+      <p lang-content="vi">
+        Chuyên sâu về tư vấn chiến lược tiếp thị B2B, quản trị kiến trúc MarTech và tái cấu trúc quy trình vận hành ứng dụng Agentic AI. Mọi trao đổi chuyên môn, hợp tác nghiên cứu hoặc yêu cầu tư vấn chiến lược cho doanh nghiệp, vui lòng kết nối trực tiếp qua:
+      </p>
+      <p lang-content="en">
+        Specializing in B2B marketing strategy, MarTech architecture orchestration, and agentic business process transformation. For strategic consulting inquiries or corporate advisory engagements, please connect directly via:
+      </p>
+
+      <!-- Contact Pills: Email & (+84) 903 096 255 -->
+      <div class="contact-channels">
+        <a href="mailto:vianhtran25@gmail.com" class="contact-pill" title="Send Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>Email: vianhtran25@gmail.com</span>
+        </a>
+        
+        <a href="tel:+84903096255" class="contact-pill" title="Direct Phone Call">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>Hotline: (+84) 903 096 255</span>
+        </a>
+      </div>
+
+      <div class="copyright-note">
+        <strong>Copyright &copy; 2026 Trần Việt Anh. All rights reserved.</strong><br>
+        <span lang-content="vi">Mọi hành vi trích dẫn hoặc tái xuất bản nội dung vui lòng ghi rõ nguồn và tác giả Trần Việt Anh.</span>
+        <span lang-content="en">Unauthorized copying, distribution, or reproduction without attribution to Trần Việt Anh is strictly prohibited.</span>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- GLOBAL SITE FOOTER (PORTFOLIO FOOTER) -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h5>Trần Việt Anh</h5>
+        <p lang-content="vi">Strategic Consulting Director. Tư vấn chiến lược tiếp thị công nghiệp, kiến trúc MarTech và tái thiết lập lợi thế cạnh tranh động thời kỳ AI.</p>
+        <p lang-content="en">Strategic Consulting Director. Advising on industrial marketing strategy, MarTech orchestration, and transient competitive advantage management.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5 lang-content="vi">Điều hướng Portfolio</h5>
+        <h5 lang-content="en">Quick Navigation</h5>
+        <ul class="footer-links">
+          <li><a href="index.html#about"><span lang-content="vi">Về tác giả</span><span lang-content="en">About Me</span></a></li>
+          <li><a href="index.html#experience"><span lang-content="vi">Kinh nghiệm công tác</span><span lang-content="en">Experience</span></a></li>
+          <li><a href="index.html#projects"><span lang-content="vi">Dự án & Case Studies</span><span lang-content="en">Projects & Cases</span></a></li>
+          <li><a href="index.html#articles"><span lang-content="vi">Góc nhìn Chiến lược</span><span lang-content="en">Strategic Insights</span></a></li>
+          <li><a href="#contact"><span lang-content="vi">Liên hệ tư vấn</span><span lang-content="en">Contact</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 lang-content="vi">Thông tin liên hệ</h5>
+        <h5 lang-content="en">Contact Details</h5>
+        <ul class="footer-links">
+          <li><a href="tel:+84903096255">(+84) 903 096 255</a></li>
+          <li><a href="mailto:vianhtran25@gmail.com">vianhtran25@gmail.com</a></li>
+          <li><span style="color: var(--text-muted);">TP. Hồ Chí Minh, Việt Nam</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Trần Việt Anh Portfolio (vianh25.github.io). All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- INTERACTIVE SCRIPTS: THEME & BILINGUAL -->
+<script>
+  // Theme Toggle Logic
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const themeIcon = document.getElementById('themeIcon');
+  const themeLabel = document.getElementById('themeLabel');
+  const root = document.documentElement;
+
+  function updateThemeUI(theme) {
+    if (theme === 'light') {
+      root.setAttribute('data-theme', 'light');
+      themeIcon.textContent = '🌙';
+      themeLabel.textContent = 'Dark';
+    } else {
+      root.setAttribute('data-theme', 'dark');
+      themeIcon.textContent = '☀️';
+      themeLabel.textContent = 'Light';
+    }
+  }
+
+  const savedTheme = localStorage.getItem('site-theme') || 
+    (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  updateThemeUI(savedTheme);
+
+  themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = root.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('site-theme', newTheme);
+    updateThemeUI(newTheme);
+  });
+
+  // Language Toggle Logic (VI / EN)
+  const langToggleBtn = document.getElementById('langToggleBtn');
+  const langLabel = document.getElementById('langLabel');
+
+  function updateLangUI(lang) {
+    if (lang === 'en') {
+      root.setAttribute('data-lang', 'en');
+      langLabel.textContent = 'Tiếng Việt';
+      document.title = 'Managing Competitive Advantage in the Age of AI & Agentic AI | Trần Việt Anh';
+    } else {
+      root.setAttribute('data-lang', 'vi');
+      langLabel.textContent = 'English';
+      document.title = 'Quản Trị Lợi Thế Cạnh Tranh Trong Kỷ Nguyên AI & Agentic AI | Trần Việt Anh';
+    }
+  }
+
+  const savedLang = localStorage.getItem('site-lang') || 'vi';
+  updateLangUI(savedLang);
+
+  langToggleBtn.addEventListener('click', () => {
+    const currentLang = root.getAttribute('data-lang') || 'vi';
+    const newLang = currentLang === 'vi' ? 'en' : 'vi';
+    localStorage.setItem('site-lang', newLang);
+    updateLangUI(newLang);
+  });
+</script>
+
+</body>
+</html>
