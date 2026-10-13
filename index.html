@@ -166,6 +166,14 @@
           <i data-lucide="bar-chart-2" class="w-3.5 h-3.5 text-blue-500 shrink-0"></i>
           <span data-i18n="navReports">Báo Cáo Nghiên Cứu</span>
         </button>
+
+        <!-- Nút dẫn đến bài viết Agentic AI -->
+        <a href="quan-ly-loi-the-agentic-ai.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-sky-950/40 hover:bg-sky-100 dark:hover:bg-sky-900/50 border border-sky-500/30 text-xs sm:text-sm font-semibold transition-all">
+          <i data-lucide="bot" class="w-3.5 h-3.5 text-sky-500 shrink-0"></i>
+          <span data-i18n="navAgenticAi">Agentic AI Insights</span>
+          <span class="px-1.5 py-0.2 rounded text-[9px] font-mono font-bold bg-sky-500 text-white uppercase tracking-wider">Mới</span>
+        </a>
+        
       </nav>
 
       <!-- Action Controls -->
@@ -402,6 +410,42 @@
               </div>
             </div>
 
+            <!-- Card Chuyên Đề: Quản Trị Lợi Thế Thời Kỳ Agentic AI -->
+                <div class="mt-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-sky-500/30 space-y-3">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-2.5">
+                    <div class="flex items-center gap-2">
+                      <div class="w-7 h-7 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center shrink-0">
+                        <i data-lucide="bot" class="w-4 h-4"></i>
+                      </div>
+                      <div>
+                        <p class="text-xs font-bold text-slate-900 dark:text-white" data-i18n="cardAgenticTitle">Chuyên Đề Nghiên Cứu: Quản Trị Lợi Thế Thời Kỳ Agentic AI</p>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400" data-i18n="cardAgenticSubtitle">Nhận diện lỗ hổng · Khung Build vs Buy · Thực chiến FMCG, BĐS & Agency Việt Nam</p>
+                      </div>
+                    </div>
+                    
+                    <a href="quan-ly-loi-the-agentic-ai.html" class="text-[11px] font-mono font-semibold text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1 self-start sm:self-auto">
+                      <span data-i18n="cardAgenticReadBtn">Đọc Toàn Bộ Bài Viết</span>
+                      <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                  </div>
+
+                  <div class="p-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-sm">
+                    <div class="space-y-1">
+                      <div class="flex items-center gap-2">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 border border-sky-500/20">Executive Strategy Paper</span>
+                        <span class="text-[10px] font-mono text-slate-400">Song ngữ VI / EN · Sơ đồ SPAR & Ma trận 3 tầng</span>
+                      </div>
+                      <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-2" data-i18n="cardAgenticDesc">
+                        Phân tích sự xói mòn của hào kinh tế tĩnh trước tốc độ của Agentic AI, giải pháp lựa chọn Build vs. Buy và lộ trình tái cấu trúc quy trình vận hành.
+                      </p>
+                    </div>
+                    <a href="quan-ly-loi-the-agentic-ai.html" class="shrink-0 px-3.5 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition-all shadow-sm">
+                      <span data-i18n="cardAgenticBtn">Xem Bài Viết</span>
+                      <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                  </div>
+                </div>
+            
             <div class="relative pl-8 group">
               <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-white dark:ring-slate-950 group-hover:scale-125 transition-transform"></div>
               <div class="sm:absolute sm:-left-40 top-1 text-xs font-mono text-slate-500 dark:text-slate-400 font-semibold mb-2 sm:mb-0" data-i18n="e2Time">
@@ -2120,6 +2164,12 @@
         aseanReportDesc: "Hofstede 6D cultural analysis, PESTLE assessment, and B2B software architectures informing Go-To-Market expansion into Singapore and Malaysia.",
         vnsTitle: "Vinasoy Mega Projects: Enterprise Architecture & Innovation Governance",
         vnsDesc: "A comprehensive transformation program led by Brandmaker for Vinasoy (QNS), integrating 10 Mega Projects from R&D governance, product innovation tollgates, multi-tier channel playbooks to cultural change management."
+        navAgenticAi: "Agentic AI Insights",
+        cardAgenticTitle: "Strategic Insight: Advantage Management in Agentic AI",
+        cardAgenticSubtitle: "5 Vulnerabilities · Build vs Buy · FMCG, Real Estate & Agency in Vietnam",
+        cardAgenticDesc: "Examining the erosion of static competitive moats in the agentic era, navigating the Build vs. Buy spectrum, and implementing resilient SPAR workflows.",
+        cardAgenticReadBtn: "Read Full Article",
+        cardAgenticBtn: "Read Analysis",      
       },
       vi: {
         headerStatus: "Tư vấn Chiến lược & Tăng trưởng",
@@ -2192,7 +2242,13 @@
         aseanReportDesc: "Khảo sát văn hóa Hofstede, phân tích PESTLE và cơ cấu ngành phần mềm B2B để thiết lập lộ trình Go-To-Market cho CADDi Drawer tại Singapore và Malaysia.",
         vnsTitle: "Vinasoy Mega Projects: Tái Thiết Kế Kiến Trúc Doanh Nghiệp & Hệ Thống Đổi Mới Sáng Tạo",
         vnsDesc: "Chương trình tư vấn chuyển đổi toàn diện do Brandmaker dẫn dắt cho Vinasoy (QNS), thiết kế khung tích hợp 10 Mega Projects đồng bộ từ nghiên cứu R&D, kiểm soát cổng lọc sản phẩm mới, xây dựng kho tri thức Playbook đa kênh đến quản trị thay đổi văn hóa tổ chức."
-      }
+        navAgenticAi: "Chuyên Đề Agentic AI",
+        cardAgenticTitle: "Chuyên Đề Nghiên Cứu: Quản Trị Lợi Thế Thời Kỳ Agentic AI",
+        cardAgenticSubtitle: "5 Lỗ hổng chiến lược · Khung Build vs Buy · Thực chiến FMCG, BĐS & Agency Việt Nam",
+        cardAgenticDesc: "Phân tích sự xói mòn của hào kinh tế tĩnh trước tốc độ của Agentic AI, giải pháp lựa chọn Build vs. Buy và lộ trình tái cấu trúc quy trình vận hành.",
+        cardAgenticReadBtn: "Đọc Toàn Bộ Bài Viết",
+        cardAgenticBtn: "Xem Bài Viết",
+    }
     };
 
     // SPA Single-Page Router
